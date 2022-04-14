@@ -15,7 +15,7 @@ public class text {
 //        Usercontroller bean = context.getBean(Usercontroller.class);
 //        User user = bean.getUser(2);
 //        System.out.println(user);
-        System.out.println("11111111111112222");
+        System.out.println("1111123232333333");
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext..xml");
         UserServiceImpl bean = context.getBean(UserServiceImpl.class);
         Random random = new Random();
