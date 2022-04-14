@@ -50,6 +50,7 @@ public class Usercontroller {
     }
     @RequestMapping("deleteUser")
     public String deleteUser(int id){
+        System.out.println("老马plus");
         userService.deleteUser(id);
         return "redirect:getList";
     }
