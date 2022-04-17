@@ -18,8 +18,8 @@
 <%--                <a href="">消息通知</a>--%>
 <%--            </span>--%>
             <ul class="ul22">
-                <li><a href="record.jsp" style="color: #9d9d9d;text-decoration:none">登录</a></li>
-                <li><a href="logon.jsp" style="color: #9d9d9d;text-decoration:none">注册</a></li>
+                <li><a href="login.jsp" style="color: #9d9d9d;text-decoration:none">登录</a></li>
+                <li><a href="requst.jsp" style="color: #9d9d9d;text-decoration:none">注册</a></li>
 <%--                <li><a href="logon.jsp"style="color: #9d9d9d">消息通知</a></li>--%>
             </ul>
             <div class="shoppingcar">
