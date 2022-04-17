@@ -82,9 +82,7 @@
     <form action="" id="form">
         <h1 style="text-align: center;color: aliceblue;">科瑞商城登录</h1>
         <p>账号:<input id="userNname" type="text"><label id="name_trip"></label></p>
-
         <p>密码:  <input id="password" type="password"><label id="password_trip"></label></p>
-
         <div style="text-align: center;margin-top: 30px;">
             <input type="submit" class="button" value="登录">
             <input type="reset" class="button" value="重置"><br>
