@@ -158,10 +158,9 @@
 <div class="note9">
     <div class="content">
         <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/431e5fd6bfd1b67d096928248be18303.jpg">
-
         <div class="middle">
             <h1>手机</h1>
-            <h2>查看更多<i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+            <h2><a href="list.jsp">更多>>></a></h2>
         </div>
         <div class="list">
             <div class="left">
