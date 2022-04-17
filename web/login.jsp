@@ -4,63 +4,93 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>小米注册</title>
-    <link rel="stylesheet" href="./css/record.css">
-	
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: url(images/Desert.jpg) no-repeat 0px 0px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        #loginDiv {
+            width: 37%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: rgba(75, 81, 95, 0.3);
+            box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+            border-radius: 5px;
+        }
+
+        #name_trip {
+            margin-left: 50px;
+            color: red;
+        }
+
+        p {
+            margin-top: 30px;
+            margin-left: 20px;
+            color: azure;
+        }
+
+        input {
+            margin-left: 15px;
+            border-radius: 5px;
+            border-style: hidden;
+            height: 30px;
+            width: 140px;
+            background-color: rgba(216, 191, 216, 0.5);
+            outline: none;
+            color: #f0edf3;
+            padding-left: 10px;
+        }
+
+        .button {
+            border-color: cornsilk;
+            background-color: rgba(100, 149, 237, .7);
+            color: aliceblue;
+            border-style: hidden;
+            border-radius: 5px;
+            width: 100px;
+            height: 31px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="all">
-        <div class="white">
-            <img src="" alt="" class="logo">
-            <div class="zi">
-                <p class="shangcheng">科瑞数码商城</p>
-                <p class="lequ">让每个人都能享受到科技的乐趣</p>
-            </div>
-            <div class="huise">
-                <img src="images/phone.jpg" class="phone" alt="">
-                <div class="huise2"></div>
-                <div class="denglu">
-                    <ul class="ul1">
-                        <li>账号登录</li>
-                        <li><a href="requst.jsp" style="color:#f76600;text-decoration:none">注册</a></li>
-                    </ul>
-                    <form action="">
-                        <input type="text" class="no1" placeholder=" 邮箱/手机号码">
-                        <input type="password" placeholder=" 密码">
-                        <input type="submit" value="登录" class="btn">
-                    </form>
-                    <p class="xiao1">手机短信登录/注册</p>
-                    <p class="xiao2">忘记密码？</p>
-                    <p class="next">——————————其他方式登录——————————</p>
-                </div>
+<div id="loginDiv">
+    <form action="" id="form">
+        <h1 style="text-align: center;color: aliceblue;">科瑞商城登录</h1>
+        <p>账号:<input id="userNname" type="text"><label id="name_trip"></label></p>
 
+        <p>密码:  <input id="password" type="password"><label id="password_trip"></label></p>
 
-            </div>
-            <div class="last">
-                <div class="si">
-                <img src="images/qq.jpg" alt="" class="qq">
-                <img src="images/weibo.jpg" alt="" class="weibo">
-                <img src="images/zhifubao.jpg" alt="" class="zhifubao">
-                <img src="images/wechat.jpg" alt="" class="wechat">
-            </div>
-                <div class="xiao">
-                    <ul class="ul2">
-                        <li>简体</li>
-                        <li>繁体</li>
-                        <li>English</li>
-                        <li>常见问题</li>
-                    </ul>
-                    <br>
-                    <p class="jingcha">小米公司版权所有-京ICP备10046444-<img src="images/police.jpg" class="jinghui" alt="">京公网安备11010802020134号-京ICP证110507号
-                </div>
-            </div>
+        <div style="text-align: center;margin-top: 30px;">
+            <input type="submit" class="button" value="login up">
+            <input type="reset" class="button" value="reset">
         </div>
-        
-    </div>
+    </form>
+</div>
 
 </body>
-
 </html>
