@@ -17,7 +17,7 @@
             overflow: hidden;
             margin: 0;
             padding: 0;
-            background: url(images/Desert.jpg) no-repeat 0px 0px;
+            background: url(images/1.jpg) no-repeat 0px 0px;
             background-repeat: no-repeat;
             background-size: 100% 100%;
             -moz-background-size: 100% 100%;
@@ -86,8 +86,9 @@
         <p>密码:  <input id="password" type="password"><label id="password_trip"></label></p>
 
         <div style="text-align: center;margin-top: 30px;">
-            <input type="submit" class="button" value="login up">
-            <input type="reset" class="button" value="reset">
+            <input type="submit" class="button" value="登录">
+            <input type="reset" class="button" value="重置"><br>
+            <a href="requst.jsp" style="color: #e2e8f1;text-decoration:none">没有账号，去注册</a>
         </div>
     </form>
 </div>

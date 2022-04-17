@@ -16,7 +16,7 @@
                                     overflow: hidden;
                                     margin: 0;
                                     padding: 0;
-                                    background: url(images/Desert.jpg) no-repeat 0px 0px;
+                                    background: url(images/1.jpg) no-repeat 0px 0px;
                                     background-repeat: no-repeat;
                                     background-size: 100% 100%;
                                     -moz-background-size: 100% 100%;
@@ -113,50 +113,17 @@
     <form action="">
                      <h1>科瑞账号注册</h1>
                      <p>用户姓名:<input id="userNname" type="text" autofocus required><label id="name_trip"></label></p>
-
                      <p>用户密码:<input id="password" type="password" required><label id="password_trip"></label></p>
-
-<%--                     <p>确认密码:<input id="surePassword" type="password" required><label id="surePassword_trip"></label></p>--%>
-
-<%--                     <p>--%>
-<%--                         用户类型:--%>
-<%--                         <select name="type" id="userType">--%>
-<%--                             <option value="0">请选择</option>--%>
-<%--                             <option value="1">普通类型</option>--%>
-<%--                             <option value="2">VIP类型</option>--%>
-<%--                         </select>--%>
-<%--                         <label id="type_trip"></label>--%>
-<%--                     </p>--%>
-
-<%--                     <div class="sexDiv">--%>
-<%--                         用户性别:--%>
-<%--                         <input class="userSex" name="sex" value="boy" type="radio">男--%>
-<%--                         <input class="userSex" name="sex" value="girl" type="radio">女--%>
-<%--                         <label id="sex_trip"></label>--%>
-<%--                     </div>--%>
-
-<%--                     <p>--%>
-<%--                         出生日期:--%>
-<%--                         <input id="birthday" type="date">--%>
-<%--                         <label id="birthday_trip"></label>--%>
-<%--                     </p>--%>
-
-<%--                     <p class="hobby">--%>
-<%--                         兴趣爱好:--%>
-<%--                         <input type="checkbox" name="hobby" value="read">阅读--%>
-<%--                         <input type="checkbox" name="hobby" value="music">音乐--%>
-<%--                         <input type="checkbox" name="hobby" value="sport">运动--%>
-<%--                         <label id="hobby_trip"></label>--%>
-<%--                     </p>--%>
-
+                     <p>确认密码:<input id="surePassword" type="password" required><label id="surePassword_trip"></label></p>
                      <p>
                          验证码:
                          <input id="email" type="email" required>
                          <label id="emil_trip"></label>
                      </p>
         <p style="text-align: center;">
-                             <input type="submit" class="button" onblur="checkForm()" onclick="return submitT()" value="提交">
-                             <input type="reset" class="button" value="取消">
+            <input type="submit" class="button"  value="提交">
+            <input type="reset" class="button" value="重置">
+
         </p>
 </form>
 
