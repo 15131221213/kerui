@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <%--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
 <%--    <meta http-equiv="X-UA-Compatible" content="ie=edge">--%>
-    <title>小米详情</title>
+    <title>科瑞数码商城详情</title>
     <link rel="stylesheet" href="./css/ditails.css">
 </head>
 
