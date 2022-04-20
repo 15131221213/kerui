@@ -7,26 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米商品列表</title>
-    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="static/css/list.css">
 </head>
 
 <body>
     <div class="box">
         <nav>
-            <ul class="ul11">
-                <li>小米商城</li>
-                <li>MIUI</li>
-                <li>loT</li>
-                <li>云服务</li>
-                <li>金融</li>
-                <li>有品</li>
-                <li>小爱开放平台</li>
-                <li>政企服务</li>
-                <li>资质证照</li>
-                <li>协议规则</li>
-                <li>下载app</li>
-                <li>Select Regin</li>
-            </ul>
             <ul class="ul22">
                 <li>登录</li>
                 <li>注册</li>
@@ -53,7 +39,8 @@
             </ul>
             <input type="text" placeholder="红米Note 7" placeholder="小米8">
             <button></button>
-            <p class="shouye">首页 > 所有分类</p>
+
+            <p class="shouye"><a href="index.jsp">首页 </a> > 所有分类</p>
         </div>
 
         <div class="more">

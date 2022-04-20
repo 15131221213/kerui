@@ -10,10 +10,13 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <mvc:annotation-driven></mvc:annotation-driven>
-    <context:component-scan base-package="com.it.chaoshi.controller"></context:component-scan>
+
+    <mvc:annotation-driven />
+    <mvc:resources mapping = "/static/**" location = "/static/" />
+
+    <context:component-scan base-package="com.it.chaoshi"></context:component-scan>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-       <property name="prefix" value="/" />
+        <property name="prefix" value="/" />
         <property name="suffix" value=".jsp" />
     </bean>
-
 </beans>
