@@ -2,7 +2,9 @@ package com.it.chaoshi.service.impl;
 
 import com.it.chaoshi.controller.ClassificationController;
 import com.it.chaoshi.dao.ClassificationDao;
+import com.it.chaoshi.dao.GoodsDao;
 import com.it.chaoshi.pojo.Classification;
+import com.it.chaoshi.pojo.Goods;
 import com.it.chaoshi.service.ClassificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

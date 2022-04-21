@@ -74,542 +74,32 @@
 <%--            <img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" alt="">--%>
         </div>
         <ul class="shangpin clear-fix">
-            <li class="xiaomi">
-                <a class="aaa" href="">Xiaomi手机</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="redmi">
-                <a  class="aaa" href="">Redmi 红米</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88bb84ff06f0ab467b859aeed36b817a.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88bb84ff06f0ab467b859aeed36b817a.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88bb84ff06f0ab467b859aeed36b817a.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88bb84ff06f0ab467b859aeed36b817a.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88bb84ff06f0ab467b859aeed36b817a.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88bb84ff06f0ab467b859aeed36b817a.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="dianshi">
-                <a class="aaa" href="">电视</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="bijiben">
-                <a class="aaa" href="">笔记本</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02c259d295316579bd896130962e291b.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02c259d295316579bd896130962e291b.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02c259d295316579bd896130962e291b.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02c259d295316579bd896130962e291b.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02c259d295316579bd896130962e291b.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02c259d295316579bd896130962e291b.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="pingban">
-                <a class="aaa" href="">平板</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aad55902a2cc64bf0306b004adb14ef7.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aad55902a2cc64bf0306b004adb14ef7.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aad55902a2cc64bf0306b004adb14ef7.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aad55902a2cc64bf0306b004adb14ef7.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aad55902a2cc64bf0306b004adb14ef7.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aad55902a2cc64bf0306b004adb14ef7.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="jiadian">
-                <a class="aaa" href="">家电</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c82798dbbc793c8bd52929dbe86b316f.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c82798dbbc793c8bd52929dbe86b316f.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c82798dbbc793c8bd52929dbe86b316f.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c82798dbbc793c8bd52929dbe86b316f.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c82798dbbc793c8bd52929dbe86b316f.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c82798dbbc793c8bd52929dbe86b316f.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="luyou">
-                <a class="aaa" href="">路由器</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2815a0a208be362cba673aae9a1f9c93.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2815a0a208be362cba673aae9a1f9c93.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2815a0a208be362cba673aae9a1f9c93.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2815a0a208be362cba673aae9a1f9c93.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2815a0a208be362cba673aae9a1f9c93.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2815a0a208be362cba673aae9a1f9c93.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="zhineng">
-                <a  class="aaa" href="">智能硬件</a>
-                <div class="item">
-                    <div class="item-sun">
-                        <ul class="clear-fix">
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6947a9a19098af72cd28e66c26b7762e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6947a9a19098af72cd28e66c26b7762e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6947a9a19098af72cd28e66c26b7762e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6947a9a19098af72cd28e66c26b7762e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6947a9a19098af72cd28e66c26b7762e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-                                <div class="youtiao">
-
-                                </div>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6947a9a19098af72cd28e66c26b7762e.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-                                    <p>Xiaomi Civi</p>
-                                    <p>2599元起</p>
-                                </a>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
+            <c:forEach items="${clist}" var="c1">
+                <c:forEach items="${glist}" var="g3">
+                    <li class="xiaomi">
+                        <a class="aaa" href="">${c1.name}</a>
+                        <div class="item">
+                            <div class="item-sun">
+                                <ul class="clear-fix">
+                                    <c:forEach items="${c1.chinder}" var="c2">
+                                        <c:forEach items="${c2.chinder}" var="c3">
+                                            <li>
+                                                <a href="">
+                                                    <img src="static/pic/${c3.pic}">
+                                                    <p>${c3.name}</p>
+                                                    <p>${g3.price}</p>
+                                                </a>
+                                                <div class="youtiao">
+                                                </div>
+                                            </li>
+                                        </c:forEach>
+                                    </c:forEach>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </c:forEach>
+            </c:forEach>
             <li class="fuwu">
                 <a class="aaa" href="">服务</a>
             </li>
@@ -657,7 +147,7 @@
                 <li>
                     <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
                          alt="">
-                    <span>小米秒杀</span>
+                    <span>话费充值</span>
                 </li>
                 <li>
                     <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
@@ -667,22 +157,22 @@
                 <li>
                     <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
                          alt="">
-                    <span>小米秒杀</span>
+                    <span>服务中心</span>
                 </li>
                 <li>
                     <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
                          alt="">
-                    <span>小米秒杀</span>
+                    <span>保障服务</span>
                 </li>
                 <li>
                     <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
                          alt="">
-                    <span>小米秒杀</span>
+                    <span>以旧华新</span>
                 </li>
                 <li>
                     <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
                          alt="">
-                    <span>小米秒杀</span>
+                    <span>F码通道</span>
                 </li>
             </ul>
         </div>
