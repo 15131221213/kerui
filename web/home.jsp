@@ -192,6 +192,40 @@
 </section>
 
 <main>
+<%--    <c:forEach items="${clist}" var="c1">--%>
+<%--        <c:forEach items="${glist}" var="g3">--%>
+<%--        <div class="dantupian">--%>
+<%--            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f334fbd05d5681bb838fefd1c815d88c.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">--%>
+<%--        </div>--%>
+<%--        <div class="toub">--%>
+<%--            <div>${c1.name}</div>--%>
+<%--            <div class="gengduo">--%>
+<%--                <a href="">查看更多</a>--%>
+<%--                <p>></p>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="bex">--%>
+<%--            <div class="lage">--%>
+<%--                <a href="">--%>
+<%--                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"--%>
+<%--                         alt="">--%>
+<%--                </a>--%>
+<%--            </div>--%>
+<%--            <ul class="shouj">--%>
+<%--                <c:forEach items="${c1.chinder}" var="c2">--%>
+<%--                    <c:forEach items="${c2.chinder}" var="c3">--%>
+<%--                        <li>--%>
+<%--                            <a href=""> <img src="static/pic/${c3.pic}" alt="">--%>
+<%--                            </a>--%>
+<%--                            <b style="display: block;font-size: 14px;">${g3.name}</b>--%>
+<%--                            <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>--%>
+<%--                            <span style="font-size: 14px;color: #ff6700;">${g3.price}</span>--%>
+<%--                        </li>--%>
+<%--                    </c:forEach>--%>
+<%--                </c:forEach>--%>
+<%--            </ul>--%>
+<%--        </c:forEach>--%>
+<%--    </c:forEach>--%>
     <div class="dantupian">
         <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f334fbd05d5681bb838fefd1c815d88c.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">
     </div>
