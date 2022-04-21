@@ -9,6 +9,15 @@ public class Classification {
     private int type;
     private String pic;
     private List<Classification> chinder;
+    private List<Goods> goodsList;
+
+    public List<Goods> getGoodsList() {
+        return goodsList;
+    }
+
+    public void setGoodsList(List<Goods> goodsList) {
+        this.goodsList = goodsList;
+    }
 
     public List<Classification> getChinder() {
         return chinder;
