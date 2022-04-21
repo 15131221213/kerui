@@ -31,7 +31,7 @@ public class Usercontroller {
         PageInfo page = new PageInfo(list);
 //        NextPage  PrePage   NavigatepageNums
         model.addAttribute("pg",page);
-        return "home";
+        return "home1";
     }
     @RequestMapping("toadd")
     public String toAdd(){
