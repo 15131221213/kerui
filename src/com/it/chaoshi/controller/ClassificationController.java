@@ -22,6 +22,7 @@ public class ClassificationController {
 //        for (Classification c:lists){
 //            System.out.println(c);
 //        }
+
         return "home";
     }
 }

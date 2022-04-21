@@ -12,6 +12,7 @@
 
 <body>
     <div class="box">
+
         <nav>
             <ul class="ul22">
                 <li>登录</li>
