@@ -123,7 +123,6 @@
         <p style="text-align: center;">
             <input type="submit" class="button"  value="提交">
             <input type="reset" class="button" value="重置">
-
         </p>
 </form>
 
