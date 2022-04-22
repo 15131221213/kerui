@@ -6,24 +6,665 @@
 <%--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
 <%--    <meta http-equiv="X-UA-Compatible" content="ie=edge">--%>
     <title>科瑞数码商城详情</title>
-    <link rel="stylesheet" href="./static/css/ditails.css">
+    <style>
+        body{
+            background: #e2dede;
+
+        }
+        nav{
+            width: 1330px;
+            height: 40px;
+            background: #333333;
+            position: relative;
+            margin: 0 auto;
+        }
+        nav  .ul11 li{
+            float: left;
+            border-right: solid 1px rgb(122, 122, 122);
+            list-style: none;
+            color: #b0b0b0;
+            padding-right: 6px;
+            padding-left: 6px;
+            font-size: 12px;
+        }
+        nav .ul11{
+            position: absolute;
+            top: -5px;
+            left: 62px;
+        }
+        nav .ul22 li{
+            list-style: none;
+            float: left;
+            color: #b0b0b0;
+            padding-right: 6px;
+            padding-left: 6px;
+            font-size: 12px;
+            border-right: solid 1px rgb(122, 122, 122);
+        }
+        nav .ul22{
+            position: absolute;
+            top: -5px;
+            right: 182px;
+        }
+        .shoppingcar{
+            width: 120px;
+            height: 40px;
+            background: #424242;
+            position: absolute;
+            right: 43px;
+
+        }
+        .shoppingcar img{
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        .shoppingcar span{
+            color: #b0b0b0;
+            font-size: 12px;
+            position: absolute;
+            top: 14px;
+            left: 40px;
+            vertical-align: middle;
+        }
+        .shangpinfenlei{
+            height: 100px;
+            width: 1330px;
+            background: rgb(255, 255, 255);
+            margin: 0 auto;
+            position: relative;
+            border-bottom: #b0b0b0 1px solid;
+        }
+        .shangpinfenlei img{
+            top: 22px;
+            left: 63px;
+            position: absolute
+        }
+        .shangpinfenlei ul{
+            position: absolute;
+            top:22px;
+            left: 186px;
+        }
+        .shangpinfenlei li{
+            font-size: 14px;
+            list-style: none;
+            color: #333333;
+            float: left;
+            margin-right: 20px;
+        }
+        .shangpinfenlei input{
+            width: 143px;
+            height: 44px;
+            border: 1px #e0e0e0 solid;
+            position: absolute;
+            top: 25px;
+            right:91px ;
+            outline: none
+        }
+        .shangpinfenlei button{
+            width: 50px;
+            height: 48px;
+            background: #ffffff url(static/images/find.jpg) no-repeat center;
+            border: 1px #e0e0e0 solid;
+            position: absolute;
+            top: 25px;
+            right: 43px;
+        }
+        input::placeholder{
+            width: 70px;
+            height: 18px;
+            background: #eeeeee;
+            margin-left: 56px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .play{
+            width: 1330px;
+            height: 63px;
+            background: #ffffff;
+            position: relative;
+            margin: 0 auto;
+            box-shadow:  0px 5px 5px rgb(214, 213, 213);
+        }
+        .play p{
+            font-size: 18px;
+            color: #212121;
+            left: 63px;
+            top: 2px;
+            position: absolute;
+        }
+        .play ul{
+            right: 34px;
+            top: 7px;
+            position: absolute
+        }
+        .play li{
+            list-style: none;
+            float: left;
+            color: #616161;
+            font-size: 12px;
+            width: 68px;
+            border-right: 1px solid #e0e2e8;
+            text-align: center;
+        }
+        .play .last1{
+            border: none;
+        }
+        .goumai1{
+            width: 1330px;
+            height: 49px;
+            margin: 0 auto;
+        }
+        .goumai{
+            color: #333333;
+            font-size: 12px;
+            text-align: center;
+            line-height: 49px;
+        }
+        .goumai a{
+            color:#ff6700;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .goumai button{
+            color: #ff6700;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        main{
+            height: 1501px;
+            width: 1330px;
+            background: #ffffff;
+            margin: 0 auto;
+            position: relative;
+        }
+        .left img{
+            top: 77px;
+            left: 146px;
+            position: absolute;
+        }
+        .no1 .p1{
+            font-size: 22px;
+            color: #212121;
+        }
+        .no1 .p2{
+            width: 600px;
+            color: #b0b0b0;
+            font-size: 14px;
+        }
+        .no1 .p3{
+            font-size: 14px;
+            color: #ff6700;
+        }
+        .no1 .p4x{
+            color: #ff6700;
+        }
+        .no1{
+            width: 600px;
+            border-bottom: 1px solid #999999;
+            position: absolute;
+            top: 3px;
+            right: 44px;
+        }
+        .no2{
+            width: 604px;
+            height: 102px;
+            border: #e0e0e0 1px solid;
+            background: #fafafa;
+            position: absolute;
+            top: 232px;
+            right: 42px;
+            box-sizing: border-box;
+        }
+        .no2 p{
+            font-size: 14px;
+            color: #333;
+            top: 16px;
+            left: 50px;
+            position: absolute
+        }
+        .no2 p span{
+            color: #ff6700;
+        }
+        .no2 img{
+            position: absolute;
+            top: 32px;
+            left: 22px;
+        }
+        .no3{
+            position: absolute;
+            top: 360px;
+            right: 349px;
+        }
+        .no3 .p1,.p3{
+            font-size: 18px;
+            color: #333;
+
+        }
+        .no3 .p2{
+            line-height: 42px;
+
+        }
+        .no3 .p2 span{
+            color: #e41f1f;
+        }
+        .no3 .p2,.p4{
+            border: 1px solid #ff6700;
+            color: #ff6700;
+            width: 298px;
+            height: 42px;
+        }
+        .no3 .p5,.p6{
+            border: 1px solid #e0e0e0;
+            color:#333;
+            width: 298px;
+            height: 42px;
+        }
+        .no3 .p5{
+            top:147.5px;
+            left:304px;
+            position: absolute
+        }
+        .no3 .p4,.p5,.p6{
+            line-height: 42px;
+            text-align: center
+        }
+        .no4{
+            width: 524px;
+            height: 606px;
+            position: absolute;
+            top: 653px;
+            left: 681px;
+        }
+        .pp1,.pp3{
+            font-size: 18px;
+            color: #333;
+        }
+        .pp2,.pp4{
+            color: #ff6700;
+            font-size: 12px;
+        }
+        .no4 .p1{
+            font-size: 18px;
+            color: #333;
+        }
+        .no4 .p2{
+            color: #b0b0b0;
+            font-size: 12px;
+        }
+        .no4 .p3{
+            color: #757575;
+            font-size: 12px;
+        }
+        .no4 .p3 a{
+            color: #ff6700;
+            text-decoration: none;
+        }
+        .ppp4{
+            font-size: 14px;
+            color: #757575;
+        }
+        .yiwai,.suiping,.baoxiu{
+            width: 604px;
+            height: 140px;
+            border: 1px pink solid;
+            position: relative;
+
+        }
+        .yiwai img{
+            top: 32px;
+            left: 83px;
+            position: absolute;
+        }
+        .suiping img{
+            top: 32px;
+            left: 83px;
+            position: absolute;
+        }
+        .baoxiu img{
+            top: 32px;
+            left: 83px;
+            position: absolute;
+        }
+        .yiwai .p1{
+            top: 12px;
+            left: 141px;
+            position: absolute
+        }
+        .suiping .p1{
+            top: 12px;
+            left: 141px;
+            position: absolute
+
+        }
+        .baoxiu .p1{
+            top: 12px;
+            left: 141px;
+            position: absolute
+
+        }
+        .yiwai .p2{
+            top: 40px;
+            left: 141px;
+            position: absolute;
+        }
+        .suiping .p2{
+            top: 40px;
+            left: 141px;
+            position: absolute;
+        }
+        .baoxiu .p2{
+            top: 40px;
+            left: 141px;
+            position: absolute;
+        }
+        .yiwai .p3{
+            bottom: 40px;
+            left: 141px;
+            position:absolute
+        }
+        .suiping .p3{
+            bottom: 40px;
+            left: 141px;
+            position:absolute
+        }
+        .baoxiu .p3{
+            bottom: 40px;
+            left: 141px;
+            position:absolute
+        }
+        .yiwai .ppp4{
+            right: 20px;
+            bottom: 34px;
+            position: absolute;
+        }
+        .baoxiu .ppp4{
+            right: 20px;
+            bottom: 34px;
+            position: absolute;
+        }
+        .suiping .ppp4{
+            right: 20px;
+            bottom: 34px;
+            position: absolute;
+        }
+        .no4 .pp2{
+            top: 8px;
+            right: -80px;
+            position: absolute;
+        }
+        .no4 .pp4{
+            top: 368px;
+            right: -80px;
+            position: absolute;
+        }
+        .no4 .pp3{
+            margin-top: 30px;
+        }
+        .huise{
+            width: 606px;
+            height: 138px;
+            background: #f9f9fa;
+            margin-top: 30px;
+            position: relative;
+        }
+        .hui1{
+            color: #616161;
+            font-size: 14px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .hui2{
+            color: #616161;
+            font-size: 14px;
+            right: 31px;
+            top: 30px;
+            position: absolute;
+        }
+        .hui3{
+            color:#ff6700;
+            font-size: 24px;
+            top: 60px;
+            left: 30px;
+            position: absolute;
+        }
+        .jiaru{
+            background:#ff6700;
+            color: white;
+            width: 300px;
+            height: 54px;
+            text-align: center;
+            line-height: 54px;
+            position: absolute;
+        }
+        .xihuan{
+            width: 142px;
+            height: 54px;
+            background: #b0b0b0;
+            color: white;
+            text-align: center;
+            line-height: 54px;
+            position: absolute;
+            left: 313px;
+            /* vertical-align: middle; */
+
+        }
+        .xihuan span{
+            font-size: 20px;
+        }
+        .duigou{
+            font-size: 12px;
+            color: #c2b0b0;
+            margin-top: 80px;
+        }
+        .duigou span{
+            margin-right: 18px;
+        }
+        .duigou img{
+            margin-right: 5px;
+        }
+        .xiamian{
+            top: 1538px;
+            position: absolute;
+        }
+        .jiage{
+            width: 1326px;
+            height: 188px;
+            background: white;
+            padding:60px 100px 0px ;
+            box-sizing: border-box;
+            letter-spacing: 2px;
+            font-size: 14px;
+            color: #b0b0b0
+        }
+        .jiage span{
+            font-size: 18px;
+            line-height: 30px;
+            color: #333
+        }
+
+        .weixiu{
+            height: 272px;
+            width: 1330px;
+            background: white;
+            margin: 0 auto;
+            margin-top: 356px;
+            position: relative;
+        }
+        .weixiu li{
+            color: #616161;
+            list-style: none;
+            float: left;
+            border-right: #616161 1px solid;
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-top: 28px;
+
+        }
+        .weixiu img{
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .weixiu li:nth-child(5){
+            border-right: none;
+        }
+        .weixiu li :nth-child(1){
+            margin-left: 20px;
+        }
+        .weixiu table{
+            width: 1226px;
+            height: 111px;
+            background: #ffffff;
+            position: absolute;
+            top: 122px;
+            left: 62px;
+        }
+        .weixiu table th{
+            text-align: left;
+            font-size: 14px;
+            color: #424242;
+            width: 160px;
+            vertical-align: top;
+        }
+        .weixiu table td{
+            font-size: 12px;
+            color: #757575;
+            text-align: left;
+            vertical-align: bottom;
+        }
+        .weixiu table .th2{
+            border-left: 1px #ff6700 solid;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .weixiu table .p1{
+            font-size: 16px;
+            color: #ff6700;
+            margin-bottom: 12px;
+        }
+        .weixiu table .p2{
+            color: #616161;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .weixiu table .p3{
+            font-size: 12px;
+            color: #ff6700;
+            margin-top: 12px;
+            border: #ff6700 1px solid;
+            width: 118px;
+            height: 28px;
+            margin: 0 auto;
+            padding-top: 3px;
+            box-sizing: border-box
+        }
+        footer{
+            width: 1330px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            margin-top: -10px;
+        }
+        footer .logo2{
+            position: absolute;
+            top: 50px;
+            left: 63px;
+        }
+        footer .ul1{
+            top: 34px;
+            left: 88px;
+            position: absolute;
+        }
+        footer .ul1 li{
+            list-style: none;
+            border-right: 2px solid #b6b6b6;
+            color: #757575;
+            float: left;
+            font-size: 12px;
+            padding-left: 3px;
+            padding-right: 3px;
+
+        }
+        footer .s1{
+            top: 50px;
+            left: 128px;
+            position: absolute;
+            color: #757575;
+            font-size: 12px;
+        }
+        footer .s2{
+            top: 70px;
+            left: 128px;
+            position: absolute;
+            color: #757575;
+            font-size: 12px;
+        }
+        footer .s3{
+            top: 88px;
+            left: 128px;
+            position: absolute;
+            color: #757575;
+            font-size: 12px;
+        }
+        footer .s4{
+            top: 106px;
+            left: 128px;
+            position: absolute;
+            color: #757575;
+            font-size: 12px;
+        }
+        .ul2 li{
+            list-style: none;
+            float: left;
+            width: 90px;
+        }
+        .ul2{
+            position: absolute;
+            top: 125px;
+            left: 128px;
+        }
+        .ul2 p{
+            font-size: 12px;
+            color: #757575;
+            width: 48px;
+
+        }
+        .x1{
+            position: absolute;
+            top: -13px;
+            left: 160px;
+        }
+        .x2{
+            position: absolute;
+            top: -13px;
+            left: 248px;
+        }
+        .x3{
+            position: absolute;
+            top: -13px;
+            left: 336px;
+        }
+        .x4{
+            position: absolute;
+            top: -13px;
+            left: 436px;
+        }
+        .last{
+            font-size: 18px;
+            left: 542px;
+            top: 190px;
+            color: #b6b4b3;
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <ul class="ul11">
-            <li>小米商城</li>
-            <li>MIUI</li>
-            <li>loT</li>
-            <li>云服务</li>
-            <li>金融</li>
-            <li>有品</li>
-            <li>小爱开放平台</li>
-            <li>政企服务</li>
-            <li>资质证照</li>
-            <li>协议规则</li>
-            <li>下载app</li>
-            <li>Select Regin</li>
+            <li>科瑞数码商城</li>
         </ul>
         <ul class="ul22">
             <li>登录</li>
@@ -62,9 +703,7 @@
             <li class="last1">用户评价</li>
         </ul>
     </div>
-    <div class="goumai1">
-        <p class="goumai">为方便您购买，请提前登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">立即登录</a><button>x</button></p>
-    </div>
+
     <main>
         <div class="left">
             <img src="images/big.jpg" alt="">

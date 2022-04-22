@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 
 <head>
@@ -71,16 +71,16 @@
 <header class="header">
     <div class="header-box">
         <div class="logo">
-<%--            <img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" alt="">--%>
+            <%--            <img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" alt="">--%>
         </div>
         <ul class="shangpin clear-fix">
             <c:forEach items="${clist}" var="c1">
-                <c:forEach items="${glist}" var="g3">
-                    <li class="xiaomi">
-                        <a class="aaa" href="">${c1.name}</a>
-                        <div class="item">
-                            <div class="item-sun">
-                                <ul class="clear-fix">
+                <li class="xiaomi">
+                    <a class="aaa" href="">${c1.name}</a>
+                    <div class="item">
+                        <div class="item-sun">
+                            <ul class="clear-fix">
+                                <c:forEach items="${glist}" var="g3">
                                     <c:forEach items="${c1.chinder}" var="c2">
                                         <c:forEach items="${c2.chinder}" var="c3">
                                             <li>
@@ -94,17 +94,17 @@
                                             </li>
                                         </c:forEach>
                                     </c:forEach>
-                                </ul>
-                            </div>
+                                </c:forEach>
+                            </ul>
                         </div>
-                    </li>
-                </c:forEach>
+                    </div>
+                </li>
             </c:forEach>
             <li class="fuwu">
                 <a class="aaa" href="">服务</a>
             </li>
             <li class="shequ">
-                <a  class="aaa" href="">社区</a>
+                <a class="aaa" href="">社区</a>
             </li>
         </ul>
         <div class="sousuo">
@@ -123,22 +123,23 @@
          alt="">
     <ul class="sssss">
         <c:forEach items="${clist}" var="c1">
-            <li class="lii">${c1.name}
+        <li class="lii">${c1.name}
             <span class="iconfont">&#xe630;</span>
             <div class="liii">
                 <c:forEach items="${c1.chinder}" var="c2">
-                        <div>
-                            <img src="static/pic/${c2.pic}">
-                            <a href="" style="text-decoration:none;color: #212121" >${c2.name}</a>
-                        </div>
-                    <c:forEach items="${c2.chinder}" var="c3">
-                        <div>
-                            <img src="static/pic/${c3.pic}">
-                            <a href="" style="text-decoration:none;color: #212121" >${c3.name}</a>
-                        </div>
-                    </c:forEach>
+                <div>
+                    <img src="static/pic/${c2.pic}">
+                    <a href="" style="text-decoration:none;color: #212121">${c2.name}</a>
+                </div>
+                <c:forEach items="${c2.chinder}" var="c3">
+                <div>
+                    <img src="static/pic/${c3.pic}">
+                    <a href="${pageContext.request.contextPath}/Goods/getGoods?id=${c3.id}"
+                       style="text-decoration:none;color: #212121">${c3.name}</a>
+                </div>
                 </c:forEach>
-        </c:forEach>
+                </c:forEach>
+                </c:forEach>
 
     </ul>
 </div>
@@ -196,47 +197,16 @@
 </section>
 
 <main>
-<%--    <c:forEach items="${clist}" var="c1">--%>
-<%--        <c:forEach items="${glist}" var="g3">--%>
-<%--        <div class="dantupian">--%>
-<%--            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f334fbd05d5681bb838fefd1c815d88c.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">--%>
-<%--        </div>--%>
-<%--        <div class="toub">--%>
-<%--            <div>${c1.name}</div>--%>
-<%--            <div class="gengduo">--%>
-<%--                <a href="">查看更多</a>--%>
-<%--                <p>></p>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--        <div class="bex">--%>
-<%--            <div class="lage">--%>
-<%--                <a href="">--%>
-<%--                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"--%>
-<%--                         alt="">--%>
-<%--                </a>--%>
-<%--            </div>--%>
-<%--            <ul class="shouj">--%>
-<%--                <c:forEach items="${c1.chinder}" var="c2">--%>
-<%--                    <c:forEach items="${c2.chinder}" var="c3">--%>
-<%--                        <li>--%>
-<%--                            <a href=""> <img src="static/pic/${c3.pic}" alt="">--%>
-<%--                            </a>--%>
-<%--                            <b style="display: block;font-size: 14px;">${g3.name}</b>--%>
-<%--                            <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>--%>
-<%--                            <span style="font-size: 14px;color: #ff6700;">${g3.price}</span>--%>
-<%--                        </li>--%>
-<%--                    </c:forEach>--%>
-<%--                </c:forEach>--%>
-<%--            </ul>--%>
-<%--        </c:forEach>--%>
-<%--    </c:forEach>--%>
     <div class="dantupian">
-        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f334fbd05d5681bb838fefd1c815d88c.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f334fbd05d5681bb838fefd1c815d88c.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+             alt="">
     </div>
+    <c:forEach items="${clist}" var="c1" varStatus="i">
+    <c:if test="${i.index<2}">
     <div class="toub">
-        <div>手机</div>
+        <div>${c1.name}</div>
         <div class="gengduo">
-            <p>查看更多</p>
+            <a href="">查看更多</a>
             <p>></p>
         </div>
     </div>
@@ -248,178 +218,23 @@
             </a>
         </div>
         <ul class="shouj">
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
-            <li>
-                <a href=""> <img
-                        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=250&h=250&f=webp&q=90"
-                        alt="">
-                </a>
-                <b style="display: block;font-size: 14px;">Note 10 Pro</b>
-                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                <span style="font-size: 14px;color: #ff6700;">1699 元起</span>
-            </li>
+                <c:forEach items="${c1.chinder}" var="c2" >
+                    <c:forEach items="${c2.chinder}" var="c3" >
+                        <c:forEach items="${glist}" var="g3" varStatus="g">
+                        <c:if test="${g.index<1 }">
+                            <li>
+                                <a href=""> <img src="static/pic/${g3.pic}" alt=""></a>
+                                <b style="display: block;font-size: 14px;">${g3.name}</b>
+                                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
+                                <span style="font-size: 14px;color: #ff6700;">${g3.price}</span>
+                            </li>
+                        </c:if>
+                    </c:forEach>
+                </c:forEach>
+            </c:forEach>
         </ul>
-    </div>
-    <div class="toub">
-        <div>手机</div>
-        <div class="gengduo">
-            <p>查看更多</p>
-            <p>></p>
-        </div>
-    </div>
-
-    <div class="boox">
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/116fc43816b87192be4e67cf762e8da5.jpeg?thumb=1&w=234&h=300&f=webp&q=90"
-                 alt="">
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dfbdabe36b2d630d57a015e6fb5eb3ea.jpg?thumb=1&w=234&h=300&f=webp&q=90"
-                 alt="">
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
-                 alt="">
-            <p class="lst1">小米全面屏电视65英寸 E65X</p>
-            <p class="lst2">全面屏设计</p>
-            <span class="lst3">299元</span>
-            <s>3299元</s>
-        </div>
-        <div>
-            <nav class="liis">
-                <section>
-                    <h3>小米米家空气净化器 2S</h3>
-                    <p>699元</p>
-                </section>
-                <section>
-                    <img src="https://i8.mifile.cn/v1/a1/d5a39c5e-28e7-f4c1-57fd-59933f26032b!100x100.jpg" alt="">
-                </section>
-            </nav>
-            <nav class="liis">
-                <section>
-                    <h3>浏览更多</h3>
-
-                </section>
-                <section>
-                    <svg t="1625491320667" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                         xmlns="http://www.w3.org/2000/svg" p-id="8326" width="48" height="48">
-                        <path
-                                d="M48.614141 512.514586C48.614141 256.995556 256.478384 49.131313 512.003879 49.131313c255.51903 0 463.38198 207.864242 463.38198 463.383273 0 255.525495-207.864242 463.388444-463.38198 463.388444C256.478384 975.904323 48.614141 768.040081 48.614141 512.514586L48.614141 512.514586zM909.191758 512.514586c0-219.015758-178.173414-397.186586-397.186586-397.186586-219.020929 0-397.193051 178.172121-397.193051 397.186586 0 219.019636 178.172121 397.191758 397.193051 397.191758C731.018343 909.707636 909.191758 731.535515 909.191758 512.514586L909.191758 512.514586zM567.474424 701.247354l165.761293-163.939556c9.797818-9.667232 12.249212-23.964444 7.378747-35.979636-0.297374-0.757657-1.025293-1.353697-1.387313-2.085495-1.521778-3.075879-3.176727-6.156929-5.72897-8.737616-0.028444-0.029737-0.065939-0.029737-0.094384-0.065939-0.036202-0.029737-0.036202-0.067232-0.067232-0.100848L568.962586 325.510465c-12.907313-12.944808-33.857939-12.974545-46.796283-0.071111-6.491798 6.454303-9.733172 14.964364-9.733172 23.434343 0 8.442828 3.206465 16.914101 9.662061 23.368404l106.843798 107.177374L313.407354 479.419475c-18.302707 0-33.101576 14.828606-33.101576 33.096404 0 18.27297 14.797576 33.101576 33.101576 33.101576l317.287434 0-109.756768 108.56598c-6.556444 6.454303-9.830141 14.995394-9.830141 23.53002 0 8.409212 3.176727 16.818424 9.566384 23.272727C533.513051 713.990465 554.467556 714.121051 567.474424 701.247354L567.474424 701.247354zM567.474424 701.247354"
-                                p-id="8327" fill="#FF6700"></path>
-                    </svg>
-                </section>
-            </nav>
-        </div>
+        </c:if>
+        </c:forEach>
     </div>
     <div class="dantupian">
         <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
