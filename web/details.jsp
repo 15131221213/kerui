@@ -707,7 +707,7 @@
 
     <main>
         <div class="left">
-            <img src="<%=path%>/static/pic/${goods.pic}" style="width: 500px;height: 500px" alt="">
+            <img src="<%=path%>/static/pic/${goods.pic}" style="width: 500px;height: 600px" alt="">
         </div>
         <aside>
             <div class="no1">
@@ -758,8 +758,8 @@
                     <p class="hui2">${goods.price}</p>
                     <p class="hui3">总计：${goods.price}</p>
                 </div>
-                <p class="jiaru">加入购物车</p>
-                <p class="xihuan"><span>❤</span>&nbsp;&nbsp;喜欢</p>
+                <a href="${pageContext.request.contextPath}/shopping/add" class="jiaru" style="text-decoration:none">加入购物车</a>
+<%--                <p class="jiaru">加入购物车</p>--%>
                 <p class="duigou"><span><img src="images/dui.jpg" alt="">小米自营</span><span><img src="images/dui.jpg" alt="">小米发货</span><span><img src="images/dui.jpg" alt="">7天无理由退货</span><span><img src="images/dui.jpg" alt="">运费说明</span></p>
             </div>
             <div class="xiamian">
