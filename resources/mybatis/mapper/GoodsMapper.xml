@@ -13,9 +13,9 @@
         delete from products where id=#{id}
     </delete>
     <select id="getGoods" resultType="com.it.chaoshi.pojo.Goods">
-        select * from products where leve3ID=#{leve3id}
+        select * from products where leve1ID=#{leve3id}
     </select>
     <select id="getGood" resultType="com.it.chaoshi.pojo.Goods">
-        select * from products where leve3ID=#{leve3id}
+        select * from products where id=#{leve3id}
     </select>
 </mapper>

@@ -1,6 +1,6 @@
 body{
     background: #e2dede;
-   
+
 }
 nav{
     width: 1330px;
@@ -95,7 +95,7 @@ nav .ul22{
 .shangpinfenlei button{
     width: 50px;
     height: 48px;
-    background: #ffffff url(../images/find.jpg) no-repeat center;
+    background: #ffffff url(static/images/find.jpg) no-repeat center;
     border: 1px #e0e0e0 solid;
     position: absolute;
     top: 25px;
@@ -115,7 +115,7 @@ input::placeholder{
     background: #ffffff;
     position: relative;
     margin: 0 auto;
-    box-shadow:  0px 5px 5px rgb(214, 213, 213); 
+    box-shadow:  0px 5px 5px rgb(214, 213, 213);
 }
 .play p{
     font-size: 18px;
@@ -149,11 +149,11 @@ input::placeholder{
 .goumai{
     color: #333333;
     font-size: 12px;
-  text-align: center;
-  line-height: 49px;
+    text-align: center;
+    line-height: 49px;
 }
 .goumai a{
-    color:#ff6700; 
+    color:#ff6700;
     font-size: 12px;
     text-decoration: none;
 }
@@ -192,460 +192,460 @@ main{
     color: #ff6700;
 }
 .no1{
-   width: 600px;
-   border-bottom: 1px solid #999999;
-   position: absolute;
-   top: 3px;
-   right: 44px;
+    width: 600px;
+    border-bottom: 1px solid #999999;
+    position: absolute;
+    top: 3px;
+    right: 44px;
 }
 .no2{
-   width: 604px;
-   height: 102px;
-   border: #e0e0e0 1px solid;
-   background: #fafafa;
-   position: absolute;
-   top: 232px;
-   right: 42px;
-   box-sizing: border-box;
+    width: 604px;
+    height: 102px;
+    border: #e0e0e0 1px solid;
+    background: #fafafa;
+    position: absolute;
+    top: 232px;
+    right: 42px;
+    box-sizing: border-box;
 }
 .no2 p{
-   font-size: 14px;
-   color: #333;
-   top: 16px;
-   left: 50px;
-   position: absolute
+    font-size: 14px;
+    color: #333;
+    top: 16px;
+    left: 50px;
+    position: absolute
 }
 .no2 p span{
-   color: #ff6700;
+    color: #ff6700;
 }
 .no2 img{
-   position: absolute;
-   top: 32px;
-   left: 22px;
+    position: absolute;
+    top: 32px;
+    left: 22px;
 }
 .no3{
-position: absolute;
-top: 360px;
-right: 349px;
+    position: absolute;
+    top: 360px;
+    right: 349px;
 }
 .no3 .p1,.p3{
-   font-size: 18px;
-   color: #333;
-   
+    font-size: 18px;
+    color: #333;
+
 }
 .no3 .p2{
-   line-height: 42px;
+    line-height: 42px;
 
 }
 .no3 .p2 span{
-   color: #e41f1f;
+    color: #e41f1f;
 }
 .no3 .p2,.p4{
-   border: 1px solid #ff6700;
-   color: #ff6700;
-   width: 298px;
-   height: 42px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    width: 298px;
+    height: 42px;
 }
 .no3 .p5,.p6{
-   border: 1px solid #e0e0e0;
-   color:#333;
-   width: 298px;
-   height: 42px;
+    border: 1px solid #e0e0e0;
+    color:#333;
+    width: 298px;
+    height: 42px;
 }
 .no3 .p5{
-   top:147.5px;
-   left:304px;
-   position: absolute
+    top:147.5px;
+    left:304px;
+    position: absolute
 }
 .no3 .p4,.p5,.p6{
-   line-height: 42px;   
-   text-align: center
+    line-height: 42px;
+    text-align: center
 }
 .no4{
-   width: 524px;
-   height: 606px;
-   position: absolute;
-   top: 653px;
-   left: 681px;
+    width: 524px;
+    height: 606px;
+    position: absolute;
+    top: 653px;
+    left: 681px;
 }
 .pp1,.pp3{
-   font-size: 18px;
-   color: #333;
+    font-size: 18px;
+    color: #333;
 }
 .pp2,.pp4{
-   color: #ff6700;
-   font-size: 12px;
+    color: #ff6700;
+    font-size: 12px;
 }
 .no4 .p1{
-font-size: 18px;
-   color: #333;
+    font-size: 18px;
+    color: #333;
 }
 .no4 .p2{
-   color: #b0b0b0;
-   font-size: 12px;
+    color: #b0b0b0;
+    font-size: 12px;
 }
 .no4 .p3{
-   color: #757575;
-   font-size: 12px;
+    color: #757575;
+    font-size: 12px;
 }
 .no4 .p3 a{
-   color: #ff6700;
-   text-decoration: none;
+    color: #ff6700;
+    text-decoration: none;
 }
 .ppp4{
-   font-size: 14px;
-   color: #757575;
+    font-size: 14px;
+    color: #757575;
 }
 .yiwai,.suiping,.baoxiu{
-   width: 604px;
-   height: 140px;
-   border: 1px pink solid;
-   position: relative;
-  
+    width: 604px;
+    height: 140px;
+    border: 1px pink solid;
+    position: relative;
+
 }
 .yiwai img{
-   top: 32px;
-   left: 83px;
-   position: absolute;
+    top: 32px;
+    left: 83px;
+    position: absolute;
 }
 .suiping img{
-top: 32px;
-   left: 83px;
-   position: absolute;
+    top: 32px;
+    left: 83px;
+    position: absolute;
 }
 .baoxiu img{
-top: 32px;
-   left: 83px;
-   position: absolute;
+    top: 32px;
+    left: 83px;
+    position: absolute;
 }
 .yiwai .p1{
-   top: 12px;
-   left: 141px;
-   position: absolute
+    top: 12px;
+    left: 141px;
+    position: absolute
 }
 .suiping .p1{
-   top: 12px;
-   left: 141px;
-   position: absolute
+    top: 12px;
+    left: 141px;
+    position: absolute
 
 }
 .baoxiu .p1{
-   top: 12px;
-   left: 141px;
-   position: absolute
+    top: 12px;
+    left: 141px;
+    position: absolute
 
 }
 .yiwai .p2{
-   top: 40px;
-   left: 141px;
-   position: absolute;
+    top: 40px;
+    left: 141px;
+    position: absolute;
 }
 .suiping .p2{
-   top: 40px;
-   left: 141px;
-   position: absolute;
+    top: 40px;
+    left: 141px;
+    position: absolute;
 }
 .baoxiu .p2{
-   top: 40px;
-   left: 141px;
-   position: absolute;
+    top: 40px;
+    left: 141px;
+    position: absolute;
 }
 .yiwai .p3{
-   bottom: 40px;
-   left: 141px;
-   position:absolute
+    bottom: 40px;
+    left: 141px;
+    position:absolute
 }
 .suiping .p3{
-   bottom: 40px;
-   left: 141px;
-   position:absolute
+    bottom: 40px;
+    left: 141px;
+    position:absolute
 }
 .baoxiu .p3{
-   bottom: 40px;
-   left: 141px;
-   position:absolute
+    bottom: 40px;
+    left: 141px;
+    position:absolute
 }
 .yiwai .ppp4{
-   right: 20px;
-   bottom: 34px;
-   position: absolute;
+    right: 20px;
+    bottom: 34px;
+    position: absolute;
 }
 .baoxiu .ppp4{
-   right: 20px;
-   bottom: 34px;
-   position: absolute;
+    right: 20px;
+    bottom: 34px;
+    position: absolute;
 }
 .suiping .ppp4{
-   right: 20px;
-   bottom: 34px;
-   position: absolute;
+    right: 20px;
+    bottom: 34px;
+    position: absolute;
 }
 .no4 .pp2{
-   top: 8px;
-   right: -80px;
+    top: 8px;
+    right: -80px;
     position: absolute;
 }
 .no4 .pp4{
-top: 368px;
-   right: -80px;
+    top: 368px;
+    right: -80px;
     position: absolute;
 }
 .no4 .pp3{
-   margin-top: 30px;
+    margin-top: 30px;
 }
 .huise{
-   width: 606px;
-   height: 138px;
-   background: #f9f9fa;
-   margin-top: 30px;
-   position: relative;
+    width: 606px;
+    height: 138px;
+    background: #f9f9fa;
+    margin-top: 30px;
+    position: relative;
 }
 .hui1{
-   color: #616161;
-   font-size: 14px;
-   position: absolute;
-   top: 30px;
-   left: 30px;
+    color: #616161;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 .hui2{
-   color: #616161;
-   font-size: 14px;
-   right: 31px;
-   top: 30px;
-   position: absolute;
+    color: #616161;
+    font-size: 14px;
+    right: 31px;
+    top: 30px;
+    position: absolute;
 }
 .hui3{
-   color:#ff6700;
-   font-size: 24px;
-   top: 60px;
-  left: 30px;
-   position: absolute;
+    color:#ff6700;
+    font-size: 24px;
+    top: 60px;
+    left: 30px;
+    position: absolute;
 }
 .jiaru{
-   background:#ff6700;
-   color: white;
-   width: 300px;
-   height: 54px;
-   text-align: center;
-   line-height: 54px;
-   position: absolute;
+    background:#ff6700;
+    color: white;
+    width: 300px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    position: absolute;
 }
 .xihuan{
-   width: 142px;
-   height: 54px;
-   background: #b0b0b0;
-   color: white;
-   text-align: center;
-   line-height: 54px;
-   position: absolute;
-   left: 313px;
-   /* vertical-align: middle; */
+    width: 142px;
+    height: 54px;
+    background: #b0b0b0;
+    color: white;
+    text-align: center;
+    line-height: 54px;
+    position: absolute;
+    left: 313px;
+    /* vertical-align: middle; */
 
 }
 .xihuan span{
-   font-size: 20px;
+    font-size: 20px;
 }
 .duigou{
-   font-size: 12px;
-   color: #c2b0b0;
-   margin-top: 80px;
+    font-size: 12px;
+    color: #c2b0b0;
+    margin-top: 80px;
 }
 .duigou span{
-   margin-right: 18px;
+    margin-right: 18px;
 }
 .duigou img{
-   margin-right: 5px;
+    margin-right: 5px;
 }
 .xiamian{
-   top: 1538px;
-   position: absolute;
+    top: 1538px;
+    position: absolute;
 }
 .jiage{
-   width: 1326px;
-   height: 188px;
-   background: white;
-   padding:60px 100px 0px ;
-   box-sizing: border-box;
-   letter-spacing: 2px; 
-   font-size: 14px;
-   color: #b0b0b0
+    width: 1326px;
+    height: 188px;
+    background: white;
+    padding:60px 100px 0px ;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #b0b0b0
 }
 .jiage span{
-font-size: 18px;
-line-height: 30px;
-color: #333
+    font-size: 18px;
+    line-height: 30px;
+    color: #333
 }
 
 .weixiu{
-       height: 272px;
-       width: 1330px;
-       background: white;
-       margin: 0 auto;
-       margin-top: 356px;
-       position: relative;
-   }
-   .weixiu li{
-       color: #616161;
-       list-style: none;
-       float: left;
-       border-right: #616161 1px solid;
-       padding-right: 50px;
-       padding-left: 50px;
-       margin-top: 28px;
+    height: 272px;
+    width: 1330px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 356px;
+    position: relative;
+}
+.weixiu li{
+    color: #616161;
+    list-style: none;
+    float: left;
+    border-right: #616161 1px solid;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 28px;
 
-   }
-   .weixiu img{
-       margin-right: 8px;
-       vertical-align: middle;
-   }
-   .weixiu li:nth-child(5){
-       border-right: none;
-   }
-   .weixiu li :nth-child(1){
+}
+.weixiu img{
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.weixiu li:nth-child(5){
+    border-right: none;
+}
+.weixiu li :nth-child(1){
     margin-left: 20px;
-   }
-    .weixiu table{
-        width: 1226px;
-        height: 111px;
-        background: #ffffff;
-       position: absolute;
-       top: 122px;
-       left: 62px;
-    }
-    .weixiu table th{
-        text-align: left;
-        font-size: 14px;
-        color: #424242;
-        width: 160px;
-        vertical-align: top;
-    }
-    .weixiu table td{
-        font-size: 12px;
-        color: #757575;
-        text-align: left;
-        vertical-align: bottom;
-    }
-    .weixiu table .th2{
-        border-left: 1px #ff6700 solid;
-        text-align: center;
-        vertical-align: middle;
-    }
-    .weixiu table .p1{
-        font-size: 16px;
-        color: #ff6700;
-        margin-bottom: 12px;
-    }
-    .weixiu table .p2{
-        color: #616161;
-        font-size: 12px;
-        margin-bottom: 8px;
-    }
-    .weixiu table .p3{
-        font-size: 12px;
-        color: #ff6700;
-        margin-top: 12px;
-        border: #ff6700 1px solid;
-        width: 118px;
-        height: 28px;
-        margin: 0 auto;
-        padding-top: 3px;
-        box-sizing: border-box
-    }
-    footer{
-        width: 1330px;
-        height: 200px;
-        margin: 0 auto;
-        position: relative;
-        margin-top: -10px;
-    }
-    footer .logo2{
-        position: absolute;
-        top: 50px;
-        left: 63px;
-    }
-    footer .ul1{
-        top: 34px;
-        left: 88px;
-        position: absolute;     
-    }
-    footer .ul1 li{
-        list-style: none;
-        border-right: 2px solid #b6b6b6;
-        color: #757575;
-        float: left;
-        font-size: 12px;
-        padding-left: 3px;
-        padding-right: 3px;
-        
-    }
-    footer .s1{
-        top: 50px;
-        left: 128px;
-        position: absolute;
-        color: #757575;
-        font-size: 12px;
-    }
-    footer .s2{
-        top: 70px;
-        left: 128px;
-        position: absolute;
-        color: #757575;
-        font-size: 12px;
-    }
-    footer .s3{
-        top: 88px;
-        left: 128px;
-        position: absolute;
-        color: #757575;
-        font-size: 12px;
-    }
-    footer .s4{
-        top: 106px;
-        left: 128px;
-        position: absolute;
-        color: #757575;
-        font-size: 12px;
-    }
-    .ul2 li{
-        list-style: none;
-        float: left;
-        width: 90px;
-    }
-    .ul2{
-        position: absolute;
-        top: 125px;
-        left: 128px;
-    }
-    .ul2 p{
-        font-size: 12px;
-        color: #757575;
-        width: 48px;
-        
-    }
-    .x1{
-        position: absolute;
-        top: -13px;
-        left: 160px;
-    }
-    .x2{
-        position: absolute;
-        top: -13px;
-        left: 248px;
-    }
-    .x3{
-        position: absolute;
-        top: -13px;
-        left: 336px;
-    }
-    .x4{
-        position: absolute;
-        top: -13px;
-        left: 436px;
-    }
-    .last{
-        font-size: 18px;
-        left: 542px;
-        top: 190px;
-        color: #b6b4b3;
-        position: absolute;
-    }
+}
+.weixiu table{
+    width: 1226px;
+    height: 111px;
+    background: #ffffff;
+    position: absolute;
+    top: 122px;
+    left: 62px;
+}
+.weixiu table th{
+    text-align: left;
+    font-size: 14px;
+    color: #424242;
+    width: 160px;
+    vertical-align: top;
+}
+.weixiu table td{
+    font-size: 12px;
+    color: #757575;
+    text-align: left;
+    vertical-align: bottom;
+}
+.weixiu table .th2{
+    border-left: 1px #ff6700 solid;
+    text-align: center;
+    vertical-align: middle;
+}
+.weixiu table .p1{
+    font-size: 16px;
+    color: #ff6700;
+    margin-bottom: 12px;
+}
+.weixiu table .p2{
+    color: #616161;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.weixiu table .p3{
+    font-size: 12px;
+    color: #ff6700;
+    margin-top: 12px;
+    border: #ff6700 1px solid;
+    width: 118px;
+    height: 28px;
+    margin: 0 auto;
+    padding-top: 3px;
+    box-sizing: border-box
+}
+footer{
+    width: 1330px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -10px;
+}
+footer .logo2{
+    position: absolute;
+    top: 50px;
+    left: 63px;
+}
+footer .ul1{
+    top: 34px;
+    left: 88px;
+    position: absolute;
+}
+footer .ul1 li{
+    list-style: none;
+    border-right: 2px solid #b6b6b6;
+    color: #757575;
+    float: left;
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+footer .s1{
+    top: 50px;
+    left: 128px;
+    position: absolute;
+    color: #757575;
+    font-size: 12px;
+}
+footer .s2{
+    top: 70px;
+    left: 128px;
+    position: absolute;
+    color: #757575;
+    font-size: 12px;
+}
+footer .s3{
+    top: 88px;
+    left: 128px;
+    position: absolute;
+    color: #757575;
+    font-size: 12px;
+}
+footer .s4{
+    top: 106px;
+    left: 128px;
+    position: absolute;
+    color: #757575;
+    font-size: 12px;
+}
+.ul2 li{
+    list-style: none;
+    float: left;
+    width: 90px;
+}
+.ul2{
+    position: absolute;
+    top: 125px;
+    left: 128px;
+}
+.ul2 p{
+    font-size: 12px;
+    color: #757575;
+    width: 48px;
+
+}
+.x1{
+    position: absolute;
+    top: -13px;
+    left: 160px;
+}
+.x2{
+    position: absolute;
+    top: -13px;
+    left: 248px;
+}
+.x3{
+    position: absolute;
+    top: -13px;
+    left: 336px;
+}
+.x4{
+    position: absolute;
+    top: -13px;
+    left: 436px;
+}
+.last{
+    font-size: 18px;
+    left: 542px;
+    top: 190px;
+    color: #b6b4b3;
+    position: absolute;
+}

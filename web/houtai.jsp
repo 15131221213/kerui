@@ -2,13 +2,14 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <html>
 <head>
+    <% String path = request.getContextPath();%>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>M+ 后台管理系统模板</title>
-    <link rel="stylesheet" href="static/assets/plugin/layui/css/layui.css">
-    <link rel="stylesheet" href="static/assets/plugin/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/assets/css/global.min.css">
-    <link rel="stylesheet" href="static/assets/css/index.min.css">
+    <link rel="stylesheet" href="<%=path%>/static/assets/plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="<%=path%>/static/assets/plugin/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<%=path%>/static/assets/css/global.min.css">
+    <link rel="stylesheet" href="<%=path%>/static/assets/css/index.min.css">
 </head>
 <body>
 
@@ -20,8 +21,8 @@
                 <div>
                     <p>
                         admin
-                        <a class="tab-open" href="javascript:;" data-href="profile.html" data-name="个人设置">
-                            <i class="layui-icon">&#xe642;</i>
+                        <a class="tab-open" href=";" data-href="profile.html" data-name="个人设置">
+                            <i class="layui-icon" href><a href="index.jsp">&#xe642;</a> </i>
                             <span class="layui-hide">个人设置</span>
                         </a>
                     </p>
@@ -37,7 +38,7 @@
             <li class="layui-nav-item layui-nav-itemed">
                 <a href="javascript:;"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp;页面</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="login.html">登陆页</a></dd>
+                    <dd><a class="tab-open" >登陆页</a></dd>
                     <dd><a class="tab-open" >表单</a></dd>
                     <dd><a class="tab-open" href="list.jsp" >列表</a></dd>
                     <dd><a class="tab-open" >个人设置</a></dd>
@@ -78,7 +79,7 @@
                 </ul>
                 <div class="layui-tab-content">
                     <div class="layui-tab-item layui-show">
-                        <iframe class="tab-main" src="home.jsp"></iframe>
+                        <iframe class="tab-main" src="<%=path%>/home.jsp"></iframe>
                     </div>
                 </div>
             </div>

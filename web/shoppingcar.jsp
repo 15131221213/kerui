@@ -76,59 +76,7 @@
                 <p class="heji">合计:<span>10798</span>元</p>
                 <div class="qujiesuan"><a href="">去结算</a></div>
             </div>
-            <div class="mid">——————————————买购物车中商品的人还买了—————————————</div>
-        </div>
-        <div class="tuijian">
-            <ul>
-                <li class="li1"><img src="images2/doublecard.jpg" alt=""></li>
-                <li class="li2"><img src="images2/greenphone.jpg" alt="">
-                    <p class="p1">黑鲨游戏手机 Helo 8GB内存</p>
-                    <p class="p2">3199元</p>
-                    <p class="p3">3291人好评</p>
-                </li>
-                <li class="li3"><img src="images2/redphone.jpg" alt="">
-                    <p class="p1">小米6X 全网通版 6GB内存 1...</p>
-                    <p class="p2">1499元</p>
-                    <p class="p3">1.8万人好评</p>
-                </li>
-                <li class="li4"><img src="images2/touyingheise.jpg" alt="">
-                    <p class="p1">米家激光投影电视 4k</p>
-                    <p class="p2">12999元</p>
-                    <p class="p3">19人好评</p>
-                </li>
-                <li class="li5"><img src="images2/hezi.jpg" alt="">
-                    <p class="p1">小米盒子4c</p>
-                    <p class="p2">199元</p>
-                    <p class="p3">4371人好评</p>
-                </li>
-                <li class="li6"><img src="images2/blackphone.jpg" alt="">
-                    <p class="p1">小米8 青春 全网通版 6GB内存</p>
-                    <p class="p2">1499元</p>
-                    <p class="p3">1.7万人好评</p>
-                </li>
-                <li class="li7"><img src="images2/tv.jpg" alt="">
-                    <p class="p1">小米电视4 75英寸</p>
-                    <p class="p2">8999元</p>
-                    <p class="p3">416人好评</p>
-                </li>
-                <li class="li8"><img src="images2/luyouqi.jpg" alt="">
-                    <p class="p1">小米WIFI放大器Pro</p>
-                    <p class="p2">79元</p>
-                    <p class="p3">1.6万人好评</p>
-                </li>
-                <li class="li9"><img src="images2/bluephone.jpg" alt="">
-                    <p class="p1">小米8 SE 全网通版 6GB内存...</p>
-                    <p class="p2">1599元</p>
-                    <p class="p3">2.8万人好评</p>
-                </li>
-                <li class="li10"><img src="images2/xian.jpg" alt="">
-                    <p class="p1">小米USB-C数据线 编织线版...</p>
-                    <p class="p2">19.9元</p>
-                    <p class="p3">1.4万人好评</p>
-                </li>
 
-            </ul>
-        </div>
         <div class="weixiu">
             <ul>
                 <li><img src="images2/weixiu.jpg" alt="">预约维修服务</li>

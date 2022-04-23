@@ -28,7 +28,10 @@ public class GoodsController {
     @RequestMapping("getGoods")
     public String getGoods(@RequestParam("id") Integer leveID, Model model){
         Goods goods = goodsService.getGood(leveID);
-        System.out.println(leveID);
+//        System.out.println(leveID);
+//        System.out.println("=========");
+//        System.out.println(goods);
+        model.addAttribute("goods",goods);
         return "details";
     }
 }

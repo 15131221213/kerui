@@ -11,6 +11,20 @@ public class Goods {
     private int leve2ID;
     private Integer leve3ID;
 
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", price=" + price +
+                ", stylesize='" + stylesize + '\'' +
+                ", pic='" + pic + '\'' +
+                ", leve1ID=" + leve1ID +
+                ", leve2ID=" + leve2ID +
+                ", leve3ID=" + leve3ID +
+                '}';
+    }
 
     public int getLeve2ID() {
         return leve2ID;
