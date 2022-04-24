@@ -17,19 +17,19 @@
     <div class="nav">
         <ul class="layui-nav layui-nav-tree layui-nav-side">
             <div class="user-info">
-                <img src="assets/image/avater.png">
+                <img src="<%=path%>/static/assets/image/avater.png">
                 <div>
                     <p>
                         admin
-                        <a class="tab-open" href=";" data-href="profile.html" data-name="个人设置">
-                            <i class="layui-icon" href><a href="index.jsp">&#xe642;</a> </i>
+                        <a class="tab-open" href="" data-href="profile.html" data-name="个人设置">
+                            <i class="layui-icon" href>&#xe642; </i>
                             <span class="layui-hide">个人设置</span>
                         </a>
                     </p>
                     <p>超级管理员</p>
                 </div>
                 <div class="sign-out" data-type="signOut">
-                    <a href="javascript:;"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+                    <a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
                 </div>
             </div>
             <li class="layui-nav-item">
@@ -40,7 +40,7 @@
                 <dl class="layui-nav-child">
                     <dd><a class="tab-open" >登陆页</a></dd>
                     <dd><a class="tab-open" >表单</a></dd>
-                    <dd><a class="tab-open" href="list.jsp" >列表</a></dd>
+                    <dd><a class="tab-open" href="${pageContext.request.contextPath}/Goods/getGoodsList" >列表</a></dd>
                     <dd><a class="tab-open" >个人设置</a></dd>
                 </dl>
             </li>

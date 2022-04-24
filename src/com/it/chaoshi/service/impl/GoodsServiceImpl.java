@@ -2,9 +2,10 @@ package com.it.chaoshi.service.impl;
 
 import com.it.chaoshi.dao.GoodsDao;
 import com.it.chaoshi.pojo.Goods;
-import com.it.chaoshi.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
 
 @Service
 public class GoodsServiceImpl {
@@ -26,5 +27,15 @@ public class GoodsServiceImpl {
     public Goods getGood(Integer leveID) {
         Goods good = goodsDao.getGood(leveID);
         return good ;
+    }
+
+    public ArrayList<Goods> getGoodsList() {
+        ArrayList<Goods> goods = goodsDao.getGoodslist();
+        return goods;
+    }
+
+    public Goods getGoodByid(int id) {
+        Goods goods = goodsDao.getGoodByid(id);
+        return goods;
     }
 }

@@ -50,7 +50,7 @@
                 <i>|</i>
             </li>
             <li>
-                <a href="${pageContext.request.contextPath}/backstage/select">后台管理</a>
+                <a href="${pageContext.request.contextPath}/houtai.jsp">后台管理</a>
                 <i></i>
             </li>
             <li class="shopping">
