@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.it.chaoshi.dao.GoodsDao">
     <insert id="addGoods">
-        insert into products(name,color,price,stylesize) values (#{name},#{color},#{price},#{stylesize})
+        insert into products(name,color,price,stylesize,pic) values (#{name},#{color},#{price},#{stylesize},#{pic})
     </insert>
     <update id="updetaGoods">
         update products set name =#{name},color =#{color},price =#{price},stylesize =#{stylesize} where id=#{id}

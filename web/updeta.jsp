@@ -25,6 +25,7 @@
     <div class="main-content">
         <!--<blockquote class="layui-elem-quote">这里可以写表单的填写说明，没有就删了。</blockquote>-->
         <form class="layui-form" action="${pageContext.request.contextPath}/Goods/update" enctype="multipart/form-data" method="post">
+            <input type="hidden" name="id" value="${goods.id}">
             <div class="layui-form-item">
                 <label class="layui-form-label">商品名字</label>
                 <div class="layui-input-inline">
@@ -49,6 +50,12 @@
                     <input type="text" name="stylesize" required  lay-verify="required" value="${goods.stylesize}" autocomplete="off" class="layui-input">
                 </div>
             </div>
+<%--            <div class="layui-form-item">--%>
+<%--                <label class="layui-form-label">图片</label><img style="width: 100px;height: 100px" src="/kerui/uploads/2022-04-24/${goods.pic}">--%>
+<%--                <div class="layui-input-inline">--%>
+<%--                    <input type="file" name="picname" required  >--%>
+<%--                </div>--%>
+<%--            </div>--%>
             <div class="layui-form-item">
                 <div class="layui-input-block">
                     <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>

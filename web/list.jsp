@@ -20,6 +20,7 @@
         <div class="toolbar">
             <button class="layui-btn layui-btn-small do-action" data-type="doAdd" data-href="form.html">
                 <a class="layui-icon" href="${pageContext.request.contextPath}/Goods/toadd" style="color: #e2e8f1">&#xe608;添加商品</a>
+<%--                <a class="layui-icon" href="${pageContext.request.contextPath}/houtai.jsp" style="color: #e2e8f1">返回</a>--%>
             </button>
         </div>
     </div>
@@ -32,6 +33,7 @@
                 <tr>
 <%--                    <th><input type="checkbox" class="icheck"></th>--%>
                     <th>商品名称</th>
+                    <th>商品图片</th>
                     <th>商品编号</th>
                     <th>商品颜色</th>
                     <th>商品配置</th>
@@ -44,6 +46,7 @@
                     <tr>
                             <%--                    <td><input type="checkbox" name="uuid" class="icheck"></td>--%>
                         <td>${g.name}</td>
+                        <td><img style="height: 75px;width: 75px" src="<%=path%>/static/pic/${g.pic}"></td>
                         <td>${g.id}</td>
                         <td>${g.color}</td>
                         <td>${g.stylesize}</td>
@@ -61,7 +64,7 @@
                     </tr>
                 </c:forEach>
                 <tr>
-                    <th colspan="6">
+                    <th colspan="7">
                         <c:if test="${glist.hasPreviousPage}">
                             <a href="${pageContext.request.contextPath}/Goods/getGoodsList/?pageNum=1">首页</a>
                             <a href="${pageContext.request.contextPath}/Goods/getGoodsList/?pageNum=${glist.prePage}">上一页</a>

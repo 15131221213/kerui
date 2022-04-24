@@ -33,7 +33,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">颜色</label>
                 <div class="layui-input-inline">
-                    <input type="password" name="color" required lay-verify="required" placeholder="颜色" autocomplete="off" class="layui-input">
+                    <input type="text" name="color" required lay-verify="required" placeholder="颜色" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">

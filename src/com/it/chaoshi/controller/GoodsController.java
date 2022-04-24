@@ -72,7 +72,7 @@ public class GoodsController {
     @RequestMapping("fileUpload")
     public
     String testResponseJson(Goods goods, @RequestParam("picname") MultipartFile
-            uploadFile, HttpServletRequest request) throws Exception{
+            uploadFile, HttpServletRequest request,Model model) throws Exception{
 //定义文件名
         String fileName = "";
 //1.获取原始文件名
@@ -91,16 +91,17 @@ public class GoodsController {
         System.out.println(fileName);
 //2.获取文件路径
         ServletContext context = request.getServletContext();
-        String basePath = context.getRealPath("/uploads");
+        String basePath = context.getRealPath("/static/pic");
 //3.解决同一文件夹中文件过多问题
-        String datePath = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+//        String datePath = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 //4.判断路径是否存在
-        File file = new File(basePath+"/"+datePath);
+        File file = new File(basePath);
         if(!file.exists()) {
             file.mkdirs();
         }
 //5.使用 MulitpartFile 接口中方法，把上传的文件写到指定位置
         uploadFile.transferTo(new File(file,fileName));
+        goods.setPic(fileName);
         goodsService.addGoods(goods);
         return "redirect:getGoodsList";
     }
