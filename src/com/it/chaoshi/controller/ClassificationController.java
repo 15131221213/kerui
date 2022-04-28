@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Controller
@@ -22,14 +23,10 @@ public class ClassificationController {
     public String getCategoryTree(Model model){
         List<Classification> categoryOne = classificationService.getCategoryOne();
         List<Classification> lists = classificationService.getCategoryTree();
-        for (Classification list : lists) {
-            for (Classification l2 : list.getChinder()) {
-                for (Classification l3 : l2.getChinder()) {
-                    List<Goods> goods = goodsDao.getGoods(l3.getId());
-                    model.addAttribute("glist",goods);
+                for (Classification l1 : lists) {
+                    List<Goods> goods = goodsDao.getGoods(l1.getId());
+                    l1.setGoodsList(goods);
                 }
-            }
-        }
         model.addAttribute("clist",lists);
 //        for (Classification c:lists){
 //            System.out.println(c);

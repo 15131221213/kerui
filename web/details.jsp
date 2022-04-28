@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
+    <% String path = request.getContextPath();%>
     <meta charset="UTF-8">
 <%--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
 <%--    <meta http-equiv="X-UA-Compatible" content="ie=edge">--%>
@@ -664,7 +665,7 @@
 <body>
     <nav>
         <ul class="ul11">
-            <li>科瑞数码商城</li>
+            <a href="${pageContext.request.contextPath}/index.jsp" style="text-decoration:none;color:#e2e8f1;">科瑞数码商城</a>
         </ul>
         <ul class="ul22">
             <li>登录</li>
@@ -706,25 +707,23 @@
 
     <main>
         <div class="left">
-            <img src="images/big.jpg" alt="">
+            <img src="<%=path%>/static/pic/${goods.pic}" style="width: 500px;height: 600px" alt="">
         </div>
         <aside>
             <div class="no1">
                 <p class="p1">小米Play</p>
                 <p class="p2">内置每月10GB高速流量/高颜值流光渐变色/5.84"小水滴全面屏/后置1200万 AI 双摄/八核高性能处理器</p>
                 <p class="p3">小米自营</p>
-                <p class="p4x">1099元</p>
+                <p class="p4x">${goods.price}元</p>
             </div>
             <div class="no2"><img src="images/dizhi.jpg" alt="">
                 <p>北京&nbsp;&nbsp; 北京市&nbsp;&nbsp; 东城区&nbsp;&nbsp; 永定门外街道&nbsp;&nbsp; <span>修改</span><br><span>有现货</span></p>
             </div>
             <div class="no3">
-                <p class="p1">选择版本</p>
-                <p class="p2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4GB+64GB<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1099元</span></p>
-                <p class="p3">选择颜色</p>
-                <p class="p4"><img src="images/lan.jpg">&nbsp;&nbsp;&nbsp;梦幻蓝</p>
-                <p class="p5"><img src="images/hei.jpg">&nbsp;&nbsp;&nbsp;黑色</p>
-                <p class="p6"><img src="images/jin.jpg">&nbsp;&nbsp;&nbsp;暮光金</p>
+                <p class="p1">版本</p>
+                <p class="p2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${goods.stylesize}<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${goods.price}</span></p>
+                <p class="p3">颜色</p>
+                <p class="p4">&nbsp;&nbsp;&nbsp;${goods.color}</p>
             </div>
             <div class="no4">
                 <p class="pp1">选择小米提供的意外保护</p>
@@ -755,12 +754,12 @@
                     <p class="ppp4">29元</p>
                 </div>
                 <div class="huise">
-                    <p class="hui1">小米Play 全网通版 4GB+64GB 梦幻蓝</p>
-                    <p class="hui2">1099元</p>
-                    <p class="hui3">总计：1099元</p>
+                    <p class="hui1">${goods.name}+${goods.stylesize}+${goods.color}</p>
+                    <p class="hui2">${goods.price}</p>
+                    <p class="hui3">总计：${goods.price}</p>
                 </div>
-                <p class="jiaru">加入购物车</p>
-                <p class="xihuan"><span>❤</span>&nbsp;&nbsp;喜欢</p>
+                <a href="${pageContext.request.contextPath}/shopping/add" class="jiaru" style="text-decoration:none">加入购物车</a>
+<%--                <p class="jiaru">加入购物车</p>--%>
                 <p class="duigou"><span><img src="images/dui.jpg" alt="">小米自营</span><span><img src="images/dui.jpg" alt="">小米发货</span><span><img src="images/dui.jpg" alt="">7天无理由退货</span><span><img src="images/dui.jpg" alt="">运费说明</span></p>
             </div>
             <div class="xiamian">

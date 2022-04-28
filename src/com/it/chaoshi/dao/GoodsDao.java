@@ -3,6 +3,7 @@ package com.it.chaoshi.dao;
 import com.it.chaoshi.pojo.Goods;
 import com.it.chaoshi.pojo.User;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface GoodsDao {
@@ -14,4 +15,8 @@ public interface GoodsDao {
 
     void updetaGoods(Goods goods);
     public Goods getGood(Integer leve3ID);
+
+    ArrayList<Goods> getGoodslist();
+
+    Goods getGoodByid(int id);
 }

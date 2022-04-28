@@ -50,7 +50,7 @@
                 <i>|</i>
             </li>
             <li>
-                <a href="houtai.jsp">后台管理</a>
+                <a href="${pageContext.request.contextPath}/houtai.jsp">后台管理</a>
                 <i></i>
             </li>
             <li class="shopping">
@@ -80,7 +80,7 @@
                     <div class="item">
                         <div class="item-sun">
                             <ul class="clear-fix">
-                                <c:forEach items="${glist}" var="g3">
+                                <c:forEach items="${c1.goodsList}" var="g3">
                                     <c:forEach items="${c1.chinder}" var="c2">
                                         <c:forEach items="${c2.chinder}" var="c3">
                                             <li>
@@ -134,7 +134,7 @@
                 <c:forEach items="${c2.chinder}" var="c3">
                 <div>
                     <img src="static/pic/${c3.pic}">
-                    <a href="${pageContext.request.contextPath}/Goods/getGoods?id=${c3.id}"
+                    <a href=""
                        style="text-decoration:none;color: #212121">${c3.name}</a>
                 </div>
                 </c:forEach>
@@ -206,7 +206,7 @@
     <div class="toub">
         <div>${c1.name}</div>
         <div class="gengduo">
-            <a href="">查看更多</a>
+            <div>查看更多</div>
             <p>></p>
         </div>
     </div>
@@ -218,20 +218,16 @@
             </a>
         </div>
         <ul class="shouj">
-                <c:forEach items="${c1.chinder}" var="c2" >
-                    <c:forEach items="${c2.chinder}" var="c3" >
-                        <c:forEach items="${glist}" var="g3" varStatus="g">
-                        <c:if test="${g.index<1 }">
-                            <li>
-                                <a href=""> <img src="static/pic/${g3.pic}" alt=""></a>
-                                <b style="display: block;font-size: 14px;">${g3.name}</b>
-                                <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
-                                <span style="font-size: 14px;color: #ff6700;">${g3.price}</span>
-                            </li>
-                        </c:if>
+                        <c:forEach items="${c1.goodsList}" var="g" varStatus="i">
+                            <c:if test="${i.index<8}">
+                                <li>
+                                    <a href="${pageContext.request.contextPath}/Goods/getGoods?id=${g.id}"> <img src="static/pic/${g.pic}"></a>
+                                    <b style="display: block;font-size: 14px;">${g.name}</b>
+                                    <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
+                                    <span style="font-size: 14px;color: #ff6700;">${g.price}</span>
+                                </li>
+                            </c:if>
                     </c:forEach>
-                </c:forEach>
-            </c:forEach>
         </ul>
         </c:if>
         </c:forEach>
@@ -456,85 +452,6 @@
 
 
 </div>
-<!-- <section class="section">
-
-    <div class="section-leftbox">
-        <ul class="leftbox-ul">
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>手机</span>
-                    <span class="iconfont">&#xe630;</span>
-                    <div class="yincangdiv">
-                        <ul></ul>
-                    </div>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>电视</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>笔记本 平板</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>家电</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>出行穿戴</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>智能 路由器</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>电源 配件</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>健康 儿童</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>耳机 音箱</span>
-                    <span class="iconfont">&#xe630;</span>
-                </a>
-            </li>
-            <li class="leftbox-ul-li">
-                <a href="" class="leftbox-ul-li-a">
-                    <span>生活 箱包</span>
-                    <span class="iconfont">&#xe630;</span>
-
-                </a>
-            </li>
-
-        </ul>
-    </div>
-    <div class="section-rightbox">
-        <span></span>
-        <div>
-            <img src="" alt="">
-        </div>
-        <span></span>
-    </div>
-</section> -->
 </body>
 
 </html>

@@ -14,8 +14,8 @@ public class text {
 //        System.out.println(user);
 //        System.out.println("1111123232333333");
 //        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-//        ClassificationController bean = context.getBean(ClassificationController.class);
-//         bean.getCategoryTree();
+////        ClassificationController bean = context.getBean(ClassificationController.class);
+////         bean.getCategoryTree();
 
 //        Random random = new Random();
 //        int i1 = random.nextInt(100);
