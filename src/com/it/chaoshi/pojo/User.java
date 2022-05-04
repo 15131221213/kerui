@@ -1,28 +1,21 @@
 package com.it.chaoshi.pojo;
 
+import java.util.Objects;
+
 public class User {
     private int id;
     private String username;
     private String password;
-    private double money;
-    private int gender;
+    private String loginame;
+    private boolean isadmin;
+    private ShoppingCart cart;
 
-    public int getGender() {
-        return gender;
+    public ShoppingCart getCart() {
+        return cart;
     }
 
-    public void setGender(int gender) {
-        this.gender = gender;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", money=" + money +
-                '}';
+    public void setCart(ShoppingCart cart) {
+        this.cart = cart;
     }
 
     public int getId() {
@@ -49,11 +42,44 @@ public class User {
         this.password = password;
     }
 
-    public double getMoney() {
-        return money;
+    public String getLoginame() {
+        return loginame;
     }
 
-    public void setMoney(double money) {
-        this.money = money;
+    public void setLoginame(String loginame) {
+        this.loginame = loginame;
+    }
+
+    public boolean isIsadmin() {
+        return isadmin;
+    }
+
+    public void setIsadmin(boolean isadmin) {
+        this.isadmin = isadmin;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", loginame='" + loginame + '\'' +
+                ", isadmin=" + isadmin +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(username, user.username) &&
+                Objects.equals(password, user.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, password);
     }
 }

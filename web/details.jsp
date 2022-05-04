@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html lang="en">
 <head>
     <% String path = request.getContextPath();%>
@@ -758,7 +759,12 @@
                     <p class="hui2">${goods.price}</p>
                     <p class="hui3">总计：${goods.price}</p>
                 </div>
-                <a href="${pageContext.request.contextPath}/shopping/add" class="jiaru" style="text-decoration:none">加入购物车</a>
+                <form method="get" action="${pageContext.request.contextPath}/shopping/addItems">
+                    <input type="hidden" name="goodsId" value="${goods.id}">
+                    <input type="submit" class="jiaru" style="text-decoration:none" value="加入购物车">
+                </form>
+
+
 <%--                <p class="jiaru">加入购物车</p>--%>
                 <p class="duigou"><span><img src="images/dui.jpg" alt="">小米自营</span><span><img src="images/dui.jpg" alt="">小米发货</span><span><img src="images/dui.jpg" alt="">7天无理由退货</span><span><img src="images/dui.jpg" alt="">运费说明</span></p>
             </div>

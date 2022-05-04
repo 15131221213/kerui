@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 
 <head>
@@ -57,11 +59,15 @@
                     <button>+</button>
                     <p class="yiwaibaozhang">意外保障服务 179元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">了解意外保护></a></p>
                 </div>
+
+                </form>
+
             </div>
+
             <div class="touyingdianshi">
                 <input type="checkbox" style="zoom:150%" class="kuang">
                 <img src="images2/touyingbaise.jpg" alt="">
-                <p class="dianshijianjie">米家激光投影电视 150英寸 白色</p>
+                <p class="dianshijianjie">老马plus+${loguser.cart.id}</p>
                 <p class="yuan9499">9499元</p>
                 <form action="">
                     <input type="button" value="－" class="jianbtn">
@@ -71,11 +77,12 @@
                 <p class="yuan9499o">9499元</p>
                 <button class="btnx">x</button>
             </div>
+
             <div class="jiesuan">
                 <p class="jixugouwu">继续购物&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <p class="gong3">共 <span>3</span> 件商品,已选择 <span>3</span> 件</p>
                 <p class="heji">合计:<span>10798</span>元</p>
-                <div class="qujiesuan"><a href="">去结算</a></div>
+                <div class="qujiesuan"><a href="#">去结算</a></div>
             </div>
 
         <div class="weixiu">

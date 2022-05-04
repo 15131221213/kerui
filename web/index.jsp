@@ -5,9 +5,6 @@
     <title>科瑞数码商城</title>
 </head>
 <body>
-
-<%
-response.sendRedirect(request.getContextPath()+"/index/select");
-%>
+<jsp:forward page="/index/select"></jsp:forward>
 </body>
 </html>

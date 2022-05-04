@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米</title>
-    <link rel="stylesheet" href="static/css/css.lunbo.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/css.lunbo.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./static/css/小米css.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/小米css.css">
     <style>
         @font-face {
             font-family: 'iconfont';
@@ -41,20 +41,29 @@
             </li>
         </ul>
         <ul class="right clear-fix">
-            <li>
-                <a href="login.jsp">登录</a>
+            <li >
+                <c:choose>
+                    <c:when test="${loguser!=null}">
+                        <a href="#">${loguser.loginame}</a>
+                        <i>|</i>
+                        <a href="${pageContext.request.contextPath}/user/logout">退出</a></c:when>
+                    <c:otherwise> <a href="${pageContext.request.contextPath}/login.jsp">登录</a></c:otherwise>
+                </c:choose>
                 <i>|</i>
             </li>
             <li>
                 <a href="requst.jsp">注册</a>
                 <i>|</i>
             </li>
-            <li>
-                <a href="${pageContext.request.contextPath}/houtai.jsp">后台管理</a>
-                <i></i>
-            </li>
+            <c:if test="${loguser!=null&&loguser.isadmin==true}">
+                <li>
+                    <a href="${pageContext.request.contextPath}/houtai.jsp">后台管理</a>
+                    <i></i>
+                </li>
+            </c:if>
+
             <li class="shopping">
-                <a href="shoppingcar.jsp">
+                <a href="${pageContext.request.contextPath}/shopping/getItems">
                     <span class="iconfont">&#xe600;</span>
                     <span>购物车</span>
                     <span>(0)</span>
@@ -85,8 +94,8 @@
                                         <c:forEach items="${c2.chinder}" var="c3">
                                             <li>
                                                 <a href="">
-                                                    <img src="static/pic/${c3.pic}">
-                                                    <p>${c3.name}</p>
+                                                    <img src="${pageContext.request.contextPath}/static/pic/${c3.pic}">
+                                                    <p>${c3.name}</p>u
                                                     <p>${g3.price}</p>
                                                 </a>
                                                 <div class="youtiao">
@@ -128,12 +137,12 @@
             <div class="liii">
                 <c:forEach items="${c1.chinder}" var="c2">
                 <div>
-                    <img src="static/pic/${c2.pic}">
+                    <img src="${pageContext.request.contextPath}/static/pic/${c2.pic}">
                     <a href="" style="text-decoration:none;color: #212121">${c2.name}</a>
                 </div>
                 <c:forEach items="${c2.chinder}" var="c3">
                 <div>
-                    <img src="static/pic/${c3.pic}">
+                    <img src="${pageContext.request.contextPath}/static/pic/${c3.pic}">
                     <a href=""
                        style="text-decoration:none;color: #212121">${c3.name}</a>
                 </div>
@@ -221,7 +230,7 @@
                         <c:forEach items="${c1.goodsList}" var="g" varStatus="i">
                             <c:if test="${i.index<8}">
                                 <li>
-                                    <a href="${pageContext.request.contextPath}/Goods/getGoods?id=${g.id}"> <img src="static/pic/${g.pic}"></a>
+                                    <a href="${pageContext.request.contextPath}/Goods/getGoods?id=${g.id}"> <img src="${pageContext.request.contextPath}/static/pic/${g.pic}"></a>
                                     <b style="display: block;font-size: 14px;">${g.name}</b>
                                     <p style="font-size: 12px;color: #333;margin: 15px 0;">天玑1100年度旗舰芯，VC液冷散热</p>
                                     <span style="font-size: 14px;color: #ff6700;">${g.price}</span>
