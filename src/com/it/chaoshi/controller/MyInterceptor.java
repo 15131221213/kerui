@@ -12,7 +12,7 @@ public class MyInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
-       /* String uri = request.getRequestURI();
+        String uri = request.getRequestURI();
 
         if (uri.indexOf("/index")>=0) {
             return true;
@@ -26,11 +26,14 @@ public class MyInterceptor implements HandlerInterceptor {
         if (uri.toString().contains("/login")) {
             return true;
         }
+        if (uri.toString().contains("/user/add")) {
+            return true;
+        }
         HttpSession session = request.getSession();
         if (session.getAttribute("loguser")==null){
             request.getRequestDispatcher("/index.jsp").forward(request,response);
             return false;
-        }*/
+        }
         return true;
     }
 }

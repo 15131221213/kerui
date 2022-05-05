@@ -35,36 +35,7 @@
                 <p class="xiaoji">小计</p>
                 <p class="caozuo">操作</p>
             </div>
-            <div class="fenseshouji">
-                <form action="">
-                    <input type="checkbox" style="zoom:150%" class="kuang">
-                    <img src="images2/pinkphone.jpg" alt="">
-                    <p class="jieshao">小米6X 全网通版 6GB内存 64GB 樱花粉</p>
-                    <p class="yuan1299">1299元</p>
-                    <form action="">
-                        <input type="button" value="－" class="jianbtn">
-                        <input type="text" value="1" class="shuliangbtn">
-                        <input type="button" value="+" class="jiabtn">
-                    </form>
-                    <p class="yuan1299o">1299元</p>
-                    <button class="btnx">x</button>
-                </form>
-                <div class="daycard">
-                    <img src="images2/onecard.jpg" alt="">
-                    <p class="zengpin">赠品</p>
-                    <p class="rizuka">米粉卡日租卡</p>
-                    <p class="shuliang1">1</p>
-                </div>
-                <div class="yiwaibaoxian">
-                    <button>+</button>
-                    <p class="yiwaibaozhang">意外保障服务 179元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">了解意外保护></a></p>
-                </div>
-
-                </form>
-
-            </div>
             <c:forEach items="${Item}" var="itemo">
-
                 <div class="touyingdianshi">
                     <input type="checkbox" style="zoom:150%" class="kuang">
                     <img src="images2/touyingbaise.jpg" alt="">
@@ -79,17 +50,12 @@
                     <button class="btnx">x</button>
                 </div>
             </c:forEach>
-
-
-
-
             <div class="jiesuan">
                 <p class="jixugouwu">继续购物&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <p class="gong3">共 <span>3</span> 件商品,已选择 <span>3</span> 件</p>
                 <p class="heji">合计:<span>10798</span>元</p>
-                <div class="qujiesuan"><a href="#">去结算</a></div>
+                <div class="qujiesuan"><a href="${pageContext.request.contextPath}/Alipay?order_number=${loguser.cart.id}&money=565">去结算</a></div>
             </div>
-
         <div class="weixiu">
             <ul>
                 <li><img src="images2/weixiu.jpg" alt="">预约维修服务</li>
