@@ -51,8 +51,7 @@
                 </div>
             </c:forEach>
             <div class="jiesuan">
-                <p class="jixugouwu">继续购物&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <p class="gong3">共 <span>3</span> 件商品,已选择 <span>3</span> 件</p>
+                <a class="jixugouwu" style="text-decoration:none" href="${pageContext.request.contextPath}/index.jsp">继续购物</a>
                 <p class="heji">合计:<span>10798</span>元</p>
                 <div class="qujiesuan"><a href="${pageContext.request.contextPath}/Alipay?order_number=${loguser.cart.id}&money=565">去结算</a></div>
             </div>
