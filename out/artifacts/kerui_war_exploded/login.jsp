@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <html lang="en">
-
+l
 <head>
     <meta charset="UTF-8">
     <title>login</title>
@@ -79,10 +79,10 @@
 
 <body>
 <div id="loginDiv">
-    <form action="" id="form">
+    <form action="${pageContext.request.contextPath}/user/login" id="form">
         <h1 style="text-align: center;color: aliceblue;">科瑞商城登录</h1>
-        <p>账号:<input id="userNname" type="text"><label id="name_trip"></label></p>
-        <p>密码:  <input id="password" type="password"><label id="password_trip"></label></p>
+        <p>账号:<input id="username" name="username" type="text"><label id="name_trip"></label></p>
+        <p>密码:  <input id="password" name="password" type="password"><label id="password_trip"></label></p>
         <div style="text-align: center;margin-top: 30px;">
             <input type="submit" class="button" value="登录">
             <input type="reset" class="button" value="重置"><br>

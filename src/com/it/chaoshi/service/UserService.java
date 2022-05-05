@@ -15,4 +15,5 @@ public interface UserService {
     void updetaUser(User user);
 
     void deleteUser(int id);
+    User login(User user);
 }

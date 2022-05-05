@@ -26,6 +26,7 @@ public class text {
 //            user.setGender(1);
 //            bean.addUser(user);
 //        }
+//       、、
     }
 
 }

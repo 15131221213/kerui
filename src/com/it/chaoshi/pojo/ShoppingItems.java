@@ -1,9 +1,35 @@
 package com.it.chaoshi.pojo;
-
 public class ShoppingItems {
+    private int id;
+    private int orderId;
     private Goods goods;
-    private int count;
-    private Double  subtotal;//小计
+    private int goodsId;
+    private int quantity;
+    private float cost;//小计
+
+    public int getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId) {
+        this.goodsId = goodsId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
 
     public Goods getGoods() {
         return goods;
@@ -13,19 +39,19 @@ public class ShoppingItems {
         this.goods = goods;
     }
 
-    public int getCount() {
-        return count;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public Double getSubtotal() {
-        return subtotal;
+    public float getCost() {
+        return cost;
     }
 
-    public void setSubtotal(Double subtotal) {
-        this.subtotal = subtotal;
+    public void setCost(float cost) {
+        this.cost = cost;
     }
 }

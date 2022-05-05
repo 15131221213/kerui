@@ -7,10 +7,15 @@ import com.it.chaoshi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpSession;
+import javax.xml.transform.Source;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("user")
@@ -38,19 +43,45 @@ public class Usercontroller {
         return "add";
     }
     @RequestMapping("add")
-    public String addUser(User user){
+    public String addUser(@RequestParam String admin,User user){
+        if (admin.equals("123456")){
+            user.setIsadmin(true);
+        }
+        System.out.println();
         userService.addUser(user);
-        return "redirect:getList";
+        return "home1";
     }
     @RequestMapping("updetaUser")
     public String updetaUser(User user){
         userService.updetaUser(user);
-        return "redirect:getList";
+        return "getList";
     }
     @RequestMapping("deleteUser")
     public String deleteUser(int id){
-        System.out.println("老马plus");
         userService.deleteUser(id);
         return "redirect:getList";
     }
+    @RequestMapping("login")
+    public String login(User user,HttpSession session){
+        User login = userService.login(user);
+        if (user.equals(login)&&login.isIsadmin()==false){
+            session.setAttribute("loguser",login);
+            return "index";
+        }else if(user.equals(login)&&login.isIsadmin()==true){
+            session.setAttribute("loguser",login);
+            return "houtai";
+        }
+        else {
+            return "";
+        }
+
+    }
+    @RequestMapping("logout")
+    public String logout(HttpSession session) throws Exception {
+        // session 过期
+        session.removeAttribute("user");
+        session.invalidate();
+        return "index";
+    }
+
 }
