@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Controller
@@ -24,10 +25,12 @@ public class ShoppingCartContorller {
     @Autowired
     private HttpSession session;
     @RequestMapping("getItems")
-    public String getItemList(){
+    public String getItemList(Model model){
         User loguser = (User) session.getAttribute("loguser");
         ShoppingCart cart = orderService.getCart(loguser);
         loguser.setCart(cart);
+        List<ShoppingItems> items = cart.getItems();
+        model.addAttribute("Item",items);
         session.setAttribute("loguser",loguser);
        return "shoppingcar" ;
     }

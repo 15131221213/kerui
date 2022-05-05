@@ -63,20 +63,25 @@
                 </form>
 
             </div>
+            <c:forEach items="${Item}" var="itemo">
 
-            <div class="touyingdianshi">
-                <input type="checkbox" style="zoom:150%" class="kuang">
-                <img src="images2/touyingbaise.jpg" alt="">
-                <p class="dianshijianjie">老马plus+${loguser.cart.id}</p>
-                <p class="yuan9499">9499元</p>
-                <form action="">
-                    <input type="button" value="－" class="jianbtn">
-                    <input type="text" value="1" class="shuliangbtn">
-                    <input type="button" value="+" class="jiabtn">
-                </form>
-                <p class="yuan9499o">9499元</p>
-                <button class="btnx">x</button>
-            </div>
+                <div class="touyingdianshi">
+                    <input type="checkbox" style="zoom:150%" class="kuang">
+                    <img src="images2/touyingbaise.jpg" alt="">
+                    <p class="dianshijianjie">${itemo.goods.name}</p>
+                    <p class="yuan9499">${itemo.goods.price}元</p>
+                    <form action="">
+                        <input type="button" value="－" class="jianbtn">
+                        <input type="text" value="1" class="shuliangbtn">
+                        <input type="button" value="+" class="jiabtn">
+                    </form>
+                    <p class="yuan9499o">9499元</p>
+                    <button class="btnx">x</button>
+                </div>
+            </c:forEach>
+
+
+
 
             <div class="jiesuan">
                 <p class="jixugouwu">继续购物&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
