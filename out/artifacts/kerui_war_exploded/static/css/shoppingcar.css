@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 1330px;
+    height: 1982px;
+    background: #f5f5f5;
+    margin: 0 auto;
+}
+header{
+    width: 1330px;
+    height: 100px;
+    background: white;
+    position: relative;
+    border-bottom: 2px solid #ff6700;
+}
+header .logo{
+    margin-left: 62px;
+    margin-top: 26px;                                       /* logo */
+}
+h2{
+    font-size: 28px;
+    top: 28px;
+    left: 155px;                                             /* 我的购物车 */
+    position: absolute;
+}
+header .tip{
+    font-size: 12px;
+    color: #757575;                                              /* 温馨提示 */
+    top: 47px;
+    left: 310px;
+    position: absolute;
+} 
+header .top{
+    position: absolute;
+    top: 38px;
+    right: 48px;
+}
+header .top li{
+    list-style: none;
+    float: left;                                                 /* 我的订单 */
+    width: 80px;
+    text-align:left;
+    height: 20px;
+    
+}
+header .top li:nth-child(1){
+    border-right: 1px #999 solid;
+}
+.top li a{
+    text-decoration: none;
+    color: #757575;
+    font-size: 12px;
+}
+.dingdan .quanbu{
+    width: 1226px;
+    height: 70px;                                       
+    background: white;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+.quanbu{
+    position: relative;                                     
+    border-bottom: 2px #e0e0e0 solid;
+}
+.quanbu span{
+    font-size: 12px;
+    color:#424242;
+    width: 40px;
+    position: absolute;                                     /* 全选 */
+    
+}
+.quanbu1{
+    left: 30px;
+    position: absolute;                                  /* 全选 */
+    top: 25px;
+}
+.name{
+    top: 29px;                                       /* 商品名称 */
+    font-size: 12px;
+    color:#424242;
+    left: 230px;
+    position: absolute
+}
+.danjia{
+    top: 29px;
+    font-size: 12px;                             /* 单价 */
+    color:#424242;
+    left: 658px;
+    position: absolute
+}
+.shuliang{
+    top: 29px;                               /* 数量 */
+    font-size: 12px;
+    color:#424242;
+    right: 368px;
+    position: absolute
+}
+.xiaoji{
+    top: 29px;                               /* 小计 */
+    font-size: 12px;
+    color:#424242;
+    right: 188px;
+    position: absolute
+}
+.caozuo{                                 /* 操作 */
+    top: 29px;
+    font-size: 12px;
+    color:#424242;
+    right: 52px;
+    position: absolute;
+}
+.fenseshouji{                            /* 樱花手机 */
+    width: 1226px;
+    height: 290px;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+}
+.fenseshouji .jieshao{
+    font-size: 16px;
+    color: #424242;                  /* 樱花手机 */
+    position: absolute;
+    top: 49px;
+    left: 230px;
+}
+.fenseshouji .kuang{
+    left: 24px;                                             /* 复选框 */
+    top: 33px;
+    position: absolute;
+}
+.fenseshouji img{
+    left: 121px;                                            /* 手机 */
+    top: 20px;
+    position: absolute
+}
+.yuan1299{
+    top: 50px;                                              /* 1299元 */
+    right: 532px;
+    position: absolute
+}
+.yuan1299o{
+    top: 50px;
+    right: 188px;                                               /* 1299元橙色 */
+    position: absolute;
+    color: #ff6700;
+}
+.fenseshouji .btnx{
+    right: 62px;
+    top: 52px;
+    position: absolute;
+    border: none;                                                /* X */
+    background: none;
+    cursor: pointer;
+}
+.jiabtn{
+    width: 38px;
+    height: 38px;
+    border: #e0e0e0 1px solid;
+    background: white;
+    top: 38px;                                               /* 加号 */
+    right: 307px;
+    position: absolute;
+    border-left: none;
+}
+.jianbtn{
+    width: 38px;
+    height: 38px;
+    border: #e0e0e0 1px solid;                               /* 减号 */
+    background: white;
+    top: 38px;  
+    right: 415px;
+    position: absolute;  
+    border-right: none;
+}
+.shuliangbtn{
+    height: 38px;
+    width: 72px;
+    border: #e0e0e0 1px solid; 
+    top: 38px;                                                     /* 数字 */
+    right: 344px;
+    position: absolute;
+    box-sizing: border-box;
+    outline: none;
+    border-left: none;
+    text-align: center;
+}
+.daycard{
+    width: 1100px;
+    height: 96px;
+    background: #f5f5f5;
+    top: 116px;
+    left: 100px;
+    position: absolute;
+}
+.daycard img{
+    top: 20px;                                           /* 图片 */
+    left: 15px;
+    position: absolute
+}
+.zengpin{
+    width: 60px;
+    height: 18px;
+    background: #e53935;
+    color: white;
+    font-size: 12px;                                             /* 赠品 */
+    text-align: center;
+    top: 21px;
+    left: 132px;
+    position: absolute;
+}
+.rizuka{
+    font-size: 16px;
+    color: #424242;
+    position: absolute;                                              /* 日租卡 */
+    top: 50px;
+    left: 132px;
+}
+.shuliang1{
+    top: 41px;
+    right: 350px;
+    position: absolute;                                                  /* 1 */
+    font-size: 12px;
+}
+.yiwaibaoxian{
+    width: 1100px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    position: relative;                                         
+    top: 227px;
+    left: 100px;
+}
+.yiwaibaoxian button{
+    background: #ff6700;
+    border-radius: 50%;
+    width: 22px;                                                    /* 加号 */
+    height: 22px;
+    border: none; 
+    top: 13px;
+    left: 20px;
+    position: absolute; 
+}
+.yiwaibaoxian a{
+            text-decoration: none;
+            color: #ff6700;
+            font-size: 12px;                                        /* 了解保护 */
+            left: 206px;
+            top: 18px;
+}
+.yiwaibaozhang{
+    font-size: 12px;
+    color: #424242;
+    top: 18px;
+    left: 57px;
+    position: absolute;
+}
+.touyingdianshi{
+    position: relative;
+    width: 1226px;
+    height: 116px;
+    background: white;
+   margin: 0 auto
+}
+.touyingdianshi .jiabtn{
+    width: 38px;
+    height: 38px;
+    border: #e0e0e0 1px solid;
+    background: white;
+    top: 38px;                                               /* 加号 */
+    right: 307px;
+    position: absolute;
+    border-left: none;
+}
+.touyingdianshi .jianbtn{
+    width: 38px;
+    height: 38px;
+    border: #e0e0e0 1px solid;                               /* 减号 */
+    background: white;
+    top: 38px;  
+    right: 415px;
+    position: absolute;  
+    border-right: none;
+}
+.touyingdianshi .shuliangbtn{
+    height: 38px;
+    width: 72px;
+    border: #e0e0e0 1px solid; 
+    top: 38px;                                                     /* 数字 */
+    right: 344px;
+    position: absolute;
+    box-sizing: border-box;
+    outline: none;
+    border-left: none;
+    text-align: center;
+}
+.touyingdianshi .kuang{
+    left: 24px;                                             /* 复选框 */
+    top: 33px;
+    position: absolute  
+}
+.touyingdianshi img{
+    top: 39px;                                                 /* 电视 */
+    left: 114px;
+    position: absolute;
+}
+.touyingdianshi .dianshijianjie{
+    color: #424242;
+    left: 230px;
+    top: 49px;                                          /* 简介 */
+    position: absolute; 
+}
+.yuan9499{
+    right: 532px;
+    top: 50px;                                          /* 9499元 */
+    position: absolute;
+}
+.yuan9499o{
+    position: absolute;
+    color: #ff6700;                                          /* 9499元 */
+    right: 188px; 
+    top: 50px;
+}
+.touyingdianshi .btnx{
+    right: 62px;
+    top: 52px;
+    position: absolute;
+    border: none;                                                /* X */
+    background: none;
+    cursor: pointer;
+}
+    .jiesuan{
+        width: 1226px;
+        height: 50px;
+        background: white;
+        margin: 0 auto;                                      /* 结算 */
+        position: relative;
+        top: 20px;
+    }
+    .jiesuan .jixugouwu{
+        color: #757575;
+        font-size: 14px;
+        position: absolute;                                      /* 继续购物 */
+        left: 32px;
+        top: 19px;
+        border-right: #c7c5c5 1px solid;
+        
+    }
+    .gong3{
+        top: 19px;
+        left: 123px;
+        color: #757575;
+        font-size: 14px;
+        position: absolute;
+    }
+    .gong3 span{
+        color: #ff6700
+    }
+    .heji{
+        top: 10px;
+        right: 256px;
+        position: absolute;
+        font-size: 14px;
+    }
+    .heji span{
+        color: #ff6700;
+        font-size: 22px;
+    }
+    .qujiesuan a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .qujiesuan{
+        width: 202px;
+        height: 50px;
+        background: #ff6700;
+        text-align: center; 
+        right: 0px;
+        top: 0px;
+        position: absolute
+    }
+    .mid{
+       margin-left: 50px;
+       margin-top: 40px;
+       font-size: 30px;
+       color: #c7c5c5
+    }
+    .tuijian{
+        height: 614px;
+        width: 1226px;
+        background: #c7c5c5;
+        margin: 0 auto;
+        margin-top: 37px;
+    }
+    .tuijian li{
+        list-style: none;
+        width: 234px;
+        height: 300px;
+        background: white;
+        text-align: center;
+        float: left;
+    }
+   .tuijian .li2,.li3{
+       padding-top: 50px;
+       box-sizing: border-box;
+   }
+   .tuijian .li4{
+       padding-top: 58px;
+       box-sizing: border-box;
+   }
+   .tuijian .li5{
+       padding-top: 60px;
+       box-sizing: border-box;
+   }
+   .tuijian .li6{
+       padding-top: 50px;
+       box-sizing: border-box;
+   }
+   .tuijian .li7{
+       padding-top: 73px;
+       box-sizing: border-box;
+   }
+   .tuijian .li8{
+       padding-top: 62px;
+       box-sizing: border-box;
+   }
+   .tuijian .li9{
+       padding-top: 50px;
+       box-sizing: border-box;
+   }
+   .tuijian .li10{
+       padding-top: 68px;
+       box-sizing: border-box;
+   }
+   .tuijian li{
+       margin-bottom: 14px;
+       margin-right: 14px;
+   }
+   .tuijian .li5{
+       margin-right: -14px;
+   }
+   .tuijian .li10{
+       margin-right: -14px;
+   }
+   .tuijian .p1{
+       color: #333333;
+       font-size: 14px;
+   }
+   .tuijian .p2{
+       color: #ff6700;
+       font-size: 14px;
+   }
+    
+   .tuijian .p3{
+       color: #b6b4b3;
+       font-size: 14px;
+   }
+   .li2 img{
+       margin-bottom: 30px;
+   }
+   .li3 img{
+       margin-bottom: 30px;
+   }
+   .li4 img{
+       margin-bottom: 42px;
+   }
+   .li5 img{
+       margin-bottom: 48px;
+   }
+   .li6 img{
+       margin-bottom: 30px;
+   }
+   .li7 img{
+       margin-bottom: 56px;
+   }
+   .li8 img{
+       margin-bottom: 28px;
+   }
+   .li9 img{
+       margin-bottom: 30px;
+   }
+   .li10 img{
+       margin-bottom: 19px;
+   }
+   .weixiu{
+       height: 272px;
+       width: 1330px;
+       background: white;
+       margin-top: 66px;
+       position: relative;
+   }
+   .weixiu li{
+       color: #616161;
+       list-style: none;
+       float: left;
+       border-right: #616161 1px solid;
+       padding-right: 54px;
+       padding-left: 54px;
+       margin-top: 28px;
+
+   }
+   .weixiu img{
+       margin-right: 8px;
+       vertical-align: middle;
+   }
+   .weixiu li:nth-child(5){
+       border-right: none;
+   }
+   .weixiu li :nth-child(1){
+    margin-left: 20px;
+   }
+    .weixiu table{
+        width: 1226px;
+        height: 111px;
+        background: #ffffff;
+       position: absolute;
+       top: 122px;
+       left: 62px;
+    }
+    .weixiu table th{
+        text-align: left;
+        font-size: 14px;
+        color: #424242;
+        width: 160px;
+        vertical-align: top;
+    }
+    .weixiu table td{
+        font-size: 12px;
+        color: #757575;
+        text-align: left;
+        vertical-align: bottom;
+    }
+    .weixiu table .th2{
+        border-left: 1px #ff6700 solid;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .weixiu table .p1{
+        font-size: 16px;
+        color: #ff6700;
+        margin-bottom: 12px;
+    }
+    .weixiu table .p2{
+        color: #616161;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .weixiu table .p3{
+        font-size: 12px;
+        color: #ff6700;
+        margin-top: 12px;
+        border: #ff6700 1px solid;
+        width: 118px;
+        height: 28px;
+        margin: 0 auto;
+        padding-top: 3px;
+        box-sizing: border-box
+    }
+    footer{
+        position: relative;
+    }
+    footer .logo2{
+        position: absolute;
+        top: 30px;
+        left: 63px;
+    }
+    footer .ul1{
+        top: 34px;
+        left: 128px;
+        position: absolute;     
+    }
+    footer .ul1 li{
+        list-style: none;
+        border-right: 2px solid #b6b6b6;
+        color: #757575;
+        float: left;
+        font-size: 12px;
+        padding-left: 3px;
+        padding-right: 3px;
+        
+    }
+    footer .p1{
+        top: 50px;
+        left: 128px;
+        position: absolute;
+        color: #757575;
+        font-size: 12px;
+    }
+    footer .p2{
+        top: 70px;
+        left: 128px;
+        position: absolute;
+        color: #757575;
+        font-size: 12px;
+    }
+    footer .p3{
+        top: 88px;
+        left: 128px;
+        position: absolute;
+        color: #757575;
+        font-size: 12px;
+    }
+    footer .p4{
+        top: 106px;
+        left: 128px;
+        position: absolute;
+        color: #757575;
+        font-size: 12px;
+    }
+    .ul2 li{
+        list-style: none;
+        float: left;
+        width: 90px;
+    }
+    .ul2{
+        position: absolute;
+        top: 125px;
+        left: 128px;
+    }
+    .ul2 p{
+        font-size: 12px;
+        color: #757575;
+        width: 48px;
+    }
+    .x1{
+        position: absolute;
+        top: 0;
+        left: 120px;
+    }
+    .x2{
+        position: absolute;
+        top: 0;
+        left: 208px;
+    }
+    .x3{
+        position: absolute;
+        top: 0;
+        left: 296px;
+    }
+    .x4{
+        position: absolute;
+        top: 0;
+        left: 396px;
+    }
+    .last{
+        font-size: 18px;
+        left: 542px;
+        top: 190px;
+        color: #b6b4b3;
+        position: absolute;
+    }
