@@ -1,5 +1,4 @@
 package com.it.chaoshi.pojo;
-
 public class ShoppingItems {
     private int id;
     private int orderId;

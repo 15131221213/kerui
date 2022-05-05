@@ -23,15 +23,14 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public ShoppingCart getCart(User user) {
-        try {
-            orderDao.getOrder(user.getId());
-        }catch (NullPointerException e){
+        ShoppingCart order = orderDao.getOrder(user.getId());
+        if (order==null){
             ShoppingCart cart = new ShoppingCart();
             cart.setUserId(user.getId());
             cart.setLoginName(user.getLoginame());
             orderDao.addCart(cart);
+            order = orderDao.getOrder(user.getId());
         }
-        ShoppingCart order = orderDao.getOrder(user.getId());
         List<ShoppingItems> list = itemDao.getList(order.getId());
         for (ShoppingItems item:list){
             item.setGoods(goodsDao.getGoodByid(item.getGoodsId()));
@@ -47,17 +46,13 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void addItem(ShoppingItems items) {
-           try {
-               itemDao.getItem(items);
-           }catch (NullPointerException e){
-               System.out.println(e.getMessage());
-               itemDao.addItem(items);
-           }
         ShoppingItems item = itemDao.getItem(items);
+        if (item==null){
+            item=items;
+            itemDao.addItem(item);
+        }
          item.setQuantity(items.getQuantity()+1);
          itemDao.update(item);
-
-
     }
 
 

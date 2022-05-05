@@ -12,6 +12,7 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
+import javax.xml.transform.Source;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,8 +47,9 @@ public class Usercontroller {
         if (admin.equals("123456")){
             user.setIsadmin(true);
         }
+        System.out.println();
         userService.addUser(user);
-        return "redirect:getList";
+        return "home1";
     }
     @RequestMapping("updetaUser")
     public String updetaUser(User user){

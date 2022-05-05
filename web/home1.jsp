@@ -52,7 +52,7 @@
                 <i>|</i>
             </li>
             <li>
-                <a href="requst.jsp">注册</a>
+                <a href="${pageContext.request.contextPath}/requst.jsp">注册</a>
                 <i>|</i>
             </li>
             <c:if test="${loguser!=null&&loguser.isadmin==true}">

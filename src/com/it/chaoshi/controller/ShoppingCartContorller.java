@@ -35,6 +35,7 @@ public class ShoppingCartContorller {
     public String addShoppingCart(ShoppingItems items){
         User loguser = (User) session.getAttribute("loguser");
         ShoppingCart cart = orderService.getCart(loguser);
+        System.out.println(cart.getId());
         items.setOrderId(cart.getId());
         orderService.addItem(items);
         return "forward:getItems";
