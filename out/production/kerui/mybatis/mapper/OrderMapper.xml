@@ -4,10 +4,17 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.it.chaoshi.dao.OrderDao">
     <select id="getOrder" resultType="com.it.chaoshi.pojo.ShoppingCart">
-        select * from ShoppingCart where userId = #{userid}
+        select * from ShoppingCart where userId = #{userid} and istijiao = 0
+    </select>
+    <select id="getOrderSuss" resultType="com.it.chaoshi.pojo.ShoppingCart">
+        select * from ShoppingCart where userId = #{userid} and istijiao = 1
     </select>
     <insert id="addCart">
-        insert into ShoppingCart(userId,loginName) values (#{userId},#{loginName})
+        insert into ShoppingCart(userId,loginName,cost) values (#{userId},#{loginName},#{cost})
     </insert>
+    <update id="update">
+        update ShoppingCart set userId= #{userId},loginName= #{loginName},cost= #{cost},istijiao= #{istijiao} where id=#{id}
+    </update>
+
 
 </mapper>

@@ -8,6 +8,15 @@ public class ShoppingCart {
     private String loginName;
     private List<ShoppingItems> Items;
     private float cost;//总价
+    private boolean getOrderSuss;
+
+    public boolean isGetOrderSuss() {
+        return getOrderSuss;
+    }
+
+    public void setGetOrderSuss(boolean getOrderSuss) {
+        this.getOrderSuss = getOrderSuss;
+    }
 
     public int getId() {
         return id;
@@ -42,10 +51,17 @@ public class ShoppingCart {
     }
 
     public float getCost() {
+        setCost();
         return cost;
     }
 
-    public void setCost(float cost) {
-        this.cost = cost;
+    public void setCost() {
+        float sum=0;
+        if (Items != null){
+            for (ShoppingItems s :Items){
+                sum += s.getQuantity()*s.getGoods().getPrice();
+            }
+        }
+        this.cost = sum;
     }
 }

@@ -14,4 +14,5 @@ public interface OrderService {
     void addItem(ShoppingItems items);
 
 
+    void update(ShoppingCart cart);
 }

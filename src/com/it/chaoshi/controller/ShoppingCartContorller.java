@@ -38,7 +38,6 @@ public class ShoppingCartContorller {
     public String addShoppingCart(ShoppingItems items){
         User loguser = (User) session.getAttribute("loguser");
         ShoppingCart cart = orderService.getCart(loguser);
-        System.out.println(cart.getId());
         items.setOrderId(cart.getId());
         orderService.addItem(items);
         return "forward:getItems";
@@ -49,6 +48,18 @@ public class ShoppingCartContorller {
     }
     @RequestMapping("clearCart")
     public String clearCart(){
+        return "";
+    }
+    @RequestMapping("jiesuan")
+    public String jiesuan(){
+        User loguser = (User) session.getAttribute("loguser");
+        ShoppingCart cart = orderService.getCart(loguser);
+        cart.setGetOrderSuss(true);
+        orderService.update(cart);
+     return "";
+    }
+    @RequestMapping("ordersuessList")
+    public String osList(){
         return "";
     }
 

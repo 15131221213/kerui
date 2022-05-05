@@ -31,16 +31,19 @@ public class OrderServiceImpl implements OrderService {
             orderDao.addCart(cart);
             order = orderDao.getOrder(user.getId());
         }
+
         List<ShoppingItems> list = itemDao.getList(order.getId());
         for (ShoppingItems item:list){
             item.setGoods(goodsDao.getGoodByid(item.getGoodsId()));
         }
         order.setItems(list);
+        orderDao.update(order);
         return order;
     }
 
     @Override
     public void addCart(ShoppingCart c) {
+        c.setCost();
         orderDao.addCart(c);
     }
 
@@ -55,5 +58,14 @@ public class OrderServiceImpl implements OrderService {
          itemDao.update(item);
     }
 
+    @Override
+    public void update(ShoppingCart cart) {
+        cart.setCost();
+       orderDao.update(cart);
+    }
+
+    List<ShoppingCart> ordersuess(User user){
+        return orderDao.getOrderSuss(user.getId());
+    }
 
 }

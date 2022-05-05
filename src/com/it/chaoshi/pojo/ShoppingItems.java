@@ -51,7 +51,9 @@ public class ShoppingItems {
         return cost;
     }
 
-    public void setCost(float cost) {
+    public void setCost() {
+        cost = 0;
+        cost = (float)(this.quantity*this.getGoods().getPrice());
         this.cost = cost;
     }
 }

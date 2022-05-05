@@ -64,7 +64,7 @@
 
             </div>
             <c:forEach items="${Item}" var="itemo">
-        
+
                 <div class="touyingdianshi">
                     <input type="checkbox" style="zoom:150%" class="kuang">
                     <img src="images2/touyingbaise.jpg" alt="">
