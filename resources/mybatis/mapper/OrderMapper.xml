@@ -12,9 +12,13 @@
     <insert id="addCart">
         insert into ShoppingCart(userId,loginName,cost) values (#{userId},#{loginName},#{cost})
     </insert>
+    <insert id="addCartNull">
+        insert into ShoppingCart(userId,loginName) values (#{userId},#{loginName})
+    </insert>
     <update id="update">
         update ShoppingCart set userId= #{userId},loginName= #{loginName},cost= #{cost},istijiao= #{istijiao} where id=#{id}
     </update>
+
 
 
 </mapper>

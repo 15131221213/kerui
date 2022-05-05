@@ -28,10 +28,15 @@ public class ShoppingCartContorller {
     public String getItemList(Model model){
         User loguser = (User) session.getAttribute("loguser");
         ShoppingCart cart = orderService.getCart(loguser);
-        loguser.setCart(cart);
         List<ShoppingItems> items = cart.getItems();
+        int sum = 0;
+        for(ShoppingItems item:items){
+            sum+=item.getQuantity();
+        }
+        loguser.setCart(cart);
         model.addAttribute("Item",items);
         session.setAttribute("loguser",loguser);
+        session.setAttribute("cartsize",sum);
        return "shoppingcar" ;
     }
     @RequestMapping("addItems")
@@ -40,11 +45,12 @@ public class ShoppingCartContorller {
         ShoppingCart cart = orderService.getCart(loguser);
         items.setOrderId(cart.getId());
         orderService.addItem(items);
-        return "forward:getItems";
+        return "redirect:getItems";
     }
     @RequestMapping("delItems")
-    public String delItem(int id){
-        return "";
+    public String delItem(@RequestParam("ItemId") Integer id){
+        orderService.delItem(id);
+        return "redirect:getItems";
     }
     @RequestMapping("clearCart")
     public String clearCart(){
@@ -54,13 +60,16 @@ public class ShoppingCartContorller {
     public String jiesuan(){
         User loguser = (User) session.getAttribute("loguser");
         ShoppingCart cart = orderService.getCart(loguser);
-        cart.setGetOrderSuss(true);
+        cart.setIstijiao(true);
         orderService.update(cart);
-     return "";
+     return "redirect:ordersuessList";
     }
     @RequestMapping("ordersuessList")
-    public String osList(){
-        return "";
+    public String osList(Model model){
+        User loguser = (User) session.getAttribute("loguser");
+        List<ShoppingCart> ordersuess = orderService.ordersuess(loguser);
+        model.addAttribute("ordersuess",ordersuess);
+        return "ordersuess";
     }
 
 }

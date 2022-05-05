@@ -669,12 +669,19 @@
             <a href="${pageContext.request.contextPath}/index.jsp" style="text-decoration:none;color:#e2e8f1;">科瑞数码商城</a>
         </ul>
         <ul class="ul22">
-            <li>登录</li>
+            <c:choose>
+                <c:when test="${loguser!=null}">
+                    <a href="#"><li>${loguser.loginame}</li></a>
+
+                    <a href="${pageContext.request.contextPath}/user/logout"><li>退出</li></a></c:when>
+                <c:otherwise> <a href="${pageContext.request.contextPath}/login.jsp"><li>登录</li></a></c:otherwise>
+            </c:choose>
+
             <li>注册</li>
             <li>消息通知</li>
         </ul>
         <div class="shoppingcar">
-            <img src="images/shoppingcar.jpg" alt=""><span>购物车( 0 )</span>
+            <img src="images/shoppingcar.jpg" alt=""><span>购物车(${cartsize})</span>
         </div>
     </nav>
     <div class="shangpinfenlei">
@@ -712,7 +719,7 @@
         </div>
         <aside>
             <div class="no1">
-                <p class="p1">小米Play</p>
+                <p class="p1">${goods.name}</p>
                 <p class="p2">内置每月10GB高速流量/高颜值流光渐变色/5.84"小水滴全面屏/后置1200万 AI 双摄/八核高性能处理器</p>
                 <p class="p3">小米自营</p>
                 <p class="p4x">${goods.price}元</p>

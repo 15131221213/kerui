@@ -28,22 +28,21 @@ public class OrderServiceImpl implements OrderService {
             ShoppingCart cart = new ShoppingCart();
             cart.setUserId(user.getId());
             cart.setLoginName(user.getLoginame());
-            orderDao.addCart(cart);
+            orderDao.addCartNull(cart);
             order = orderDao.getOrder(user.getId());
         }
-
         List<ShoppingItems> list = itemDao.getList(order.getId());
-        for (ShoppingItems item:list){
-            item.setGoods(goodsDao.getGoodByid(item.getGoodsId()));
+        for (int i=0;i<list.size();i++) {
+           list.get(i).setGoods(goodsDao.getGoodByid(list.get(i).getGoodsId()));
         }
         order.setItems(list);
+        order.setCost();
         orderDao.update(order);
         return order;
     }
 
     @Override
     public void addCart(ShoppingCart c) {
-        c.setCost();
         orderDao.addCart(c);
     }
 
@@ -51,20 +50,31 @@ public class OrderServiceImpl implements OrderService {
     public void addItem(ShoppingItems items) {
         ShoppingItems item = itemDao.getItem(items);
         if (item==null){
-            item=items;
-            itemDao.addItem(item);
+            items.setQuantity(1);
+            items.setGoods(goodsDao.getGoodByid(items.getGoodsId()));
+            items.setCost();
+            itemDao.addItem(items);
+        }else {
+            item.setQuantity(item.getQuantity()+1);
+            item.setGoods(goodsDao.getGoodByid(item.getGoodsId()));
+            item.setCost();
+            itemDao.update(item);
         }
-         item.setQuantity(items.getQuantity()+1);
-         itemDao.update(item);
     }
 
     @Override
     public void update(ShoppingCart cart) {
-        cart.setCost();
+
        orderDao.update(cart);
     }
 
-    List<ShoppingCart> ordersuess(User user){
+    @Override
+    public void delItem(int id) {
+        itemDao.delItem(id);
+    }
+    @Override
+    public List<ShoppingCart> ordersuess(User user){
+
         return orderDao.getOrderSuss(user.getId());
     }
 

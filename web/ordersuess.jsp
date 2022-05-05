@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>科瑞数码购物车</title>
+    <title>我的订单</title>
     <link rel="stylesheet" href="<%=path%>/static/css/shoppingcar.css">
 </head>
 
@@ -17,45 +17,29 @@
     <div class="box">
         <header>
             <img src="images/logo.jpg" class="logo" alt="">
-            <h2>我的购物车</h2>
-            <p class="tip">温馨提示:产品是否购买成功,以最终下单为准哦,请尽快结算</p>
-            <ul class="top">
-                <li><a href="${pageContext.request.contextPath}/shopping/jiesuan">订单提交测试</a></li>
-                <li><a href="${pageContext.request.contextPath}/shopping/ordersuessList">&nbsp;&nbsp;我的订单</a></li>
-            </ul>
+            <h2>我的订单</h2>
+
+
         </header>
         <div class="dingdan">
-            <div class="quanbu">
-                <form action="" class="quanbu1">
-                    <input type="checkbox" style="zoom:150%"><span>&nbsp;全选</span>
-                </form>
-                <p class="name">商品名称</p>
-                <p class="danjia">单价</p>
-                <p class="shuliang">数量</p>
-                <p class="xiaoji">小计</p>
-                <p class="caozuo">操作</p>
+            <div class="touyingdianshi">
+
+                <p class="name">订单号&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;配送状态</p>
+                <p class="danjia">用户名</p>
+                <p class="shuliang">总价</p>
+                <p class="xiaoji">订单详情</p>
+
             </div>
 
-            <c:forEach items="${Item}" var="itemo">
+            <c:forEach items="${ordersuess}" var="list">
                 <div class="touyingdianshi">
-                    <input type="checkbox" style="zoom:150%" class="kuang">
-                    <img src="images2/touyingbaise.jpg" alt="">
-                    <p class="dianshijianjie">${itemo.goods.name}</p>
-                    <p class="yuan9499">${itemo.goods.price}元</p>
-                    <form action="">
-                        <input type="button" value="－" class="jianbtn">
-                        <input type="text" value="${itemo.quantity}" class="shuliangbtn">
-                        <input type="button" value="+" class="jiabtn">
-                    </form>
-                    <p class="yuan9499o">"${itemo.cost}"元</p>
-                    <button class="btnx" ><a href="${pageContext.request.contextPath}/shopping/delItems?ItemId=${itemo.id}">x</a> </button>
+
+                    <p class="name">${list.id}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正在发货中......</p>
+                    <p class="danjia">${list.loginName}</p>
+                    <p class="shuliang">${list.cost}</p>
+                    <p class="xiaoji">订单详情</p>
                 </div>
             </c:forEach>
-            <div class="jiesuan">
-                <a class="jixugouwu" style="text-decoration:none" href="${pageContext.request.contextPath}/index.jsp">继续购物</a>
-                <p class="heji">合计:<span>${loguser.cart.cost}</span>元</p>
-                <div class="qujiesuan"><a href="${pageContext.request.contextPath}/Alipay?order_number=${loguser.cart.id}&money=565">去结算</a></div>
-            </div>
         <div class="weixiu">
             <ul>
                 <li><img src="images2/weixiu.jpg" alt="">预约维修服务</li>

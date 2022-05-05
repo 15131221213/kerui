@@ -15,5 +15,8 @@
     <select id="getItem" resultType="com.it.chaoshi.pojo.ShoppingItems">
         select * from shoppingItems where orderId =#{orderId} and goodsId = #{goodsId}
     </select>
+    <delete id="delItem">
+        delete from shoppingItems where id=#{id}
+    </delete>
 
 </mapper>

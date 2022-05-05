@@ -9,4 +9,5 @@ public interface ItemDao {
     void addItem(ShoppingItems items);
     ShoppingItems getItem(ShoppingItems items);
     void update(ShoppingItems items);
+    void delItem(int id);
 }

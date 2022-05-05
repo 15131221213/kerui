@@ -8,14 +8,14 @@ public class ShoppingCart {
     private String loginName;
     private List<ShoppingItems> Items;
     private float cost;//总价
-    private boolean getOrderSuss;
+    private boolean istijiao;
 
-    public boolean isGetOrderSuss() {
-        return getOrderSuss;
+    public boolean getIstijiao() {
+        return istijiao;
     }
 
-    public void setGetOrderSuss(boolean getOrderSuss) {
-        this.getOrderSuss = getOrderSuss;
+    public void setIstijiao(boolean istijiao) {
+        this.istijiao = istijiao;
     }
 
     public int getId() {
@@ -51,17 +51,21 @@ public class ShoppingCart {
     }
 
     public float getCost() {
-        setCost();
         return cost;
+    }
+
+    public void setCost(float cost) {
+        this.cost = cost;
     }
 
     public void setCost() {
         float sum=0;
-        if (Items != null){
+        if (Items.size() >0){
             for (ShoppingItems s :Items){
-                sum += s.getQuantity()*s.getGoods().getPrice();
+                sum += (float)(s.getQuantity()*s.getGoods().getPrice());
             }
         }
         this.cost = sum;
     }
+
 }

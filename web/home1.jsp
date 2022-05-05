@@ -66,12 +66,22 @@
                 <a href="${pageContext.request.contextPath}/shopping/getItems">
                     <span class="iconfont">&#xe600;</span>
                     <span>购物车</span>
-                    <span>(0)</span>
+                    <span>(${cartsize})</span>
 
                 </a>
-                <div class="gouwuwenben">
-                    购物车中还没有商品，赶紧选购吧！
-                </div>
+                <c:choose>
+                    <c:when test="${cartsize==0}">
+                        <div class="gouwuwenben">
+                            购物车中还没有商品，赶紧选购吧！
+                        </div>
+                    </c:when>
+                    <c:otherwise>
+                        <div class="gouwuwenben">
+                            您已添加${cartsize}件商品，现在结算另赠小礼品一份！
+                        </div>
+                    </c:otherwise>
+                </c:choose>
+
             </li>
         </ul>
     </nav>

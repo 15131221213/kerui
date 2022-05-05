@@ -2,7 +2,9 @@ package com.it.chaoshi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.it.chaoshi.pojo.ShoppingItems;
 import com.it.chaoshi.pojo.User;
+import com.it.chaoshi.service.OrderService;
 import com.it.chaoshi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,6 +24,8 @@ import java.util.Map;
 public class Usercontroller {
     @Autowired
     private UserService userService;
+    @Autowired
+    private OrderService orderService;
     @RequestMapping("toUpdate")
     public String getUser(int id,Model model){
         User user = userService.getUser(id);
@@ -64,11 +68,24 @@ public class Usercontroller {
     @RequestMapping("login")
     public String login(User user,HttpSession session){
         User login = userService.login(user);
+
         if (user.equals(login)&&login.isIsadmin()==false){
             session.setAttribute("loguser",login);
+            List<ShoppingItems>items = orderService.getCart(login).getItems();
+            int sum = 0;
+            for(ShoppingItems item:items){
+                sum+=item.getQuantity();
+            }
+            session.setAttribute("cartsize",sum);
             return "index";
         }else if(user.equals(login)&&login.isIsadmin()==true){
             session.setAttribute("loguser",login);
+            List<ShoppingItems>items = orderService.getCart(login).getItems();
+            int sum = 0;
+            for(ShoppingItems item:items){
+                sum+=item.getQuantity();
+            }
+            session.setAttribute("cartsize",sum);
             return "houtai";
         }
         else {

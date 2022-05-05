@@ -7,6 +7,7 @@ import com.it.chaoshi.pojo.User;
 import java.util.List;
 
 public interface OrderService {
+    List<ShoppingCart> ordersuess(User user);
     ShoppingCart getCart(User user);
 
     void addCart(ShoppingCart c);
@@ -15,4 +16,6 @@ public interface OrderService {
 
 
     void update(ShoppingCart cart);
+
+    void delItem(int id);
 }
