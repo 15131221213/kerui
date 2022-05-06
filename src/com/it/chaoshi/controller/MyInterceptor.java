@@ -1,5 +1,6 @@
 package com.it.chaoshi.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 

@@ -13,10 +13,11 @@
     <mvc:annotation-driven />
     <mvc:resources mapping = "/static/**" location = "/static/" />
     <mvc:default-servlet-handler></mvc:default-servlet-handler>
- <mvc:interceptors>
+    <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"></mvc:mapping>
             <bean class="com.it.chaoshi.controller.MyInterceptor"></bean>
+
         </mvc:interceptor>
     </mvc:interceptors>
 
@@ -27,4 +28,6 @@
     </bean>
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
     </bean>
+
+
 </beans>
