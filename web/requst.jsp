@@ -118,6 +118,13 @@
             } else
                 return true;
         }
+        //全局加载
+        $(function(){
+            //加载验证码
+            $("#imgVcode").attr("src","${pageContext.request.contextPath}/user/validateCode.do");
+
+        });
+
     </script>
 </head>
 <body>
@@ -132,9 +139,12 @@
     </p>
     <p>&nbsp;&nbsp;邀请码:<input id="admin" name="admin" type="password" required><label id=""></label></p>
 
-    <p>&nbsp;&nbsp;验证码:
-        <input id="email" type="email" required>
-        <label id="emil_trip"></label>
+
+    </div>
+    </td>
+    </tr>
+
+
     </p>
     <p style="text-align: center;">
         <input type="submit" class="button" value="提交">

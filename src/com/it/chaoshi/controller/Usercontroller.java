@@ -2,6 +2,7 @@ package com.it.chaoshi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.google.code.kaptcha.Producer;
 import com.it.chaoshi.pojo.ShoppingItems;
 import com.it.chaoshi.pojo.User;
 import com.it.chaoshi.service.OrderService;
@@ -13,8 +14,13 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.imageio.ImageIO;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.xml.transform.Source;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +32,9 @@ public class Usercontroller {
     private UserService userService;
     @Autowired
     private OrderService orderService;
+
+
+
     @RequestMapping("toUpdate")
     public String getUser(int id,Model model){
         User user = userService.getUser(id);

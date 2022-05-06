@@ -54,7 +54,7 @@
             <div class="jiesuan">
                 <a class="jixugouwu" style="text-decoration:none" href="${pageContext.request.contextPath}/index.jsp">继续购物</a>
                 <p class="heji">合计:<span>${loguser.cart.cost}</span>元</p>
-                <div class="qujiesuan"><a href="${pageContext.request.contextPath}/Alipay?order_number=${loguser.cart.id}&money=565">去结算</a></div>
+                <div class="qujiesuan"><a href="${pageContext.request.contextPath}/Alipay?order_number=${loguser.cart.id}&money=${loguser.cart.cost}">去结算</a></div>
             </div>
         <div class="weixiu">
             <ul>
