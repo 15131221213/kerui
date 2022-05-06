@@ -67,7 +67,6 @@
                     <span class="iconfont">&#xe600;</span>
                     <span>购物车</span>
                     <span>(${cartsize})</span>
-
                 </a>
                 <c:choose>
                     <c:when test="${cartsize==0}">
